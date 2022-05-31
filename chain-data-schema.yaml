@@ -1,0 +1,43 @@
+ContractData:
+  type: object
+  additionalProperties: false
+  required:
+    - address
+    - startBlock
+  properties:
+    address:
+      type: string
+      format: hex
+    startBlock:
+      type: integer
+      minimum: 0
+ChainData:
+  type: object
+  additionalProperties: false
+  required:
+    - chainName
+    - chainId
+    - rpcUrls
+    - workspace
+    - applications
+    - grantFactory
+    - reviews
+  properties:
+    chainName:
+      type: string
+    chainId:
+      type: integer
+    rpcUrls:
+      type: array
+      items:
+        type: string
+        format: uri
+      minItems: 1
+    workspace:
+      $ref: '#/ContractData'
+    applications:
+      $ref: '#/ContractData'
+    grantFactory:
+      $ref: '#/ContractData'
+    reviews:
+      $ref: '#/ContractData'
