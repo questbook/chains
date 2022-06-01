@@ -9,9 +9,14 @@ ContractData:
     address:
       type: string
       format: hex
+      description: Address of the contract deployment
+      example: '0x0000000000000000000000000000000000000000'
     startBlock:
       type: integer
       minimum: 0
+      description: >-
+        What block to start indexing the contract.
+        Could be any block after contract deployment
 ChainData:
   $id: ChainData
   type: object
@@ -24,8 +29,10 @@ ChainData:
   properties:
     chainName:
       type: string
+      description: Name of the chain, has to be the same as the name of the chain config file
     chainId:
       type: integer
+      description: ID of the chain
     rpcUrls:
       type: array
       items:
@@ -33,8 +40,10 @@ ChainData:
         minLength: 1
         maxLength: 500
       minItems: 1
+      description: Specify as many RPC urls you'd like for the chain
     qbContracts:
       type: object
+      description: Data about where the QB contracts are deployed on the chain
       additionalProperties: false
       required:
         - workspace
