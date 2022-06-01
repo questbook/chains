@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
+    "outDir": "lib",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [ "es2020" ]
+  },
+  "include": [
+    "src/*.ts", 
+    "src/*/*.ts"
+  ],
+  "exclude": [
+    "node_modules", 
+    "src/tests",
+    "src/migrations",
+  ]
+}
