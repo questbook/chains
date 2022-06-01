@@ -1,6 +1,7 @@
 chainName: rinkeby
 chainId: 4
 rpcUrls:
+  # infura key is replaced when the graph node is deployed
   - https://rinkeby.infura.io/v3/{{infura_key}}
 workspace:
   address: '0xC5bA1DD677a89f7675015cd96124702D5a2D3A40'

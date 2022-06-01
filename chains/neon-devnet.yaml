@@ -1,4 +1,4 @@
-network: neon-devnet
+chainName: neon-devnet
 chainId: 245022926
 rpcUrls:
   - http://neon-devnet-rpc.questbook.app:9090/solana
