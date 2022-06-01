@@ -1,0 +1,16 @@
+chainName: optimism-kovan
+chainId: 69
+rpcUrls:
+  - https://optimism-kovan.infura.io/v3/{{infura_key}}
+workspace:
+  address: '0x168A72b08FCFF48192E0B1A27486f4394a4F86e1'
+  startBlock: 194188
+applications:
+  address: '0xC6b6356FBdcf6CC6EA4Cb90Cd11B7E3c5848F312'
+  startBlock: 194188
+grantFactory:
+  address: '0xCc3367953734da16bC7740696617b62d80845C90'
+  startBlock: 194188
+reviews:
+  address: '0x6178d7Ac94E045d39850Ef6f35cCD0D4851DAbeC'
+  startBlock: 194188

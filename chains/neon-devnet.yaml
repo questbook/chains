@@ -1,0 +1,16 @@
+network: neon-devnet
+chainId: 245022926
+rpcUrls:
+  - http://neon-devnet-rpc.questbook.app:9090/solana
+workspace:
+  address: '0x6D0f81BDA11995f25921aAd5B43359630E65Ca96'
+  startBlock: 136788319
+applications:
+  address: '0x32798CC9da06363eF2b0eE12e54cD4476D9C891a'
+  startBlock: 136788319
+grantFactory:
+  address: '0xda717ab1206c59493e1E5c66F4e0712B39EC6D81'
+  startBlock: 136788319
+reviews:
+  address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
+  startBlock: 136788319

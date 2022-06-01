@@ -1,0 +1,16 @@
+chainName: celo-alfajores-testnet
+chainId: 44787
+rpcUrls:
+  - https://alfajores-forno.celo-testnet.org
+workspace:
+  address: '0xF39E0AA8cA215D41dF7c9AeB3aBa76FfdAd0951F'
+  startBlock: 11709425
+applications:
+  address: '0xE9d6c045232b7f4C07C151f368E747EBE46209E4'
+  startBlock: 11709444
+grantFactory:
+  address: '0xCc3367953734da16bC7740696617b62d80845C90'
+  startBlock: 11709435
+reviews:
+  address: '0x6Cb5Ee567592eD1fBdA48413a1F95e848d289D34'
+  startBlock: 11709456
