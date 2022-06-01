@@ -3,15 +3,16 @@ chainId: 137
 rpcUrls:
   - https://polygon-mainnet.infura.io/v3/{{infura_key}}
   - https://polygon-mainnet.g.alchemy.com/v2/{{alchemy_key}}
-workspace:
-  address: '0x168A72b08FCFF48192E0B1A27486f4394a4F86e1'
-  startBlock: 26808274
-applications:
-  address: '0xE9d6c045232b7f4C07C151f368E747EBE46209E4'
-  startBlock: 26808274
-grantFactory:
-  address: '0xC6b6356FBdcf6CC6EA4Cb90Cd11B7E3c5848F312'
-  startBlock: 26808274
-reviews:
-  address: '0xdC5EbC9130a2e7Ad776E3503fa6Dcf16D80ca915'
-  startBlock: 26808274
+qbContracts:
+  workspace:
+    address: '0x168A72b08FCFF48192E0B1A27486f4394a4F86e1'
+    startBlock: 26808274
+  applications:
+    address: '0xE9d6c045232b7f4C07C151f368E747EBE46209E4'
+    startBlock: 26808274
+  grantFactory:
+    address: '0xC6b6356FBdcf6CC6EA4Cb90Cd11B7E3c5848F312'
+    startBlock: 26808274
+  reviews:
+    address: '0xdC5EbC9130a2e7Ad776E3503fa6Dcf16D80ca915'
+    startBlock: 26808274

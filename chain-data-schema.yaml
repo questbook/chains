@@ -20,10 +20,7 @@ ChainData:
     - chainName
     - chainId
     - rpcUrls
-    - workspace
-    - applications
-    - grantFactory
-    - reviews
+    - qbContracts
   properties:
     chainName:
       type: string
@@ -36,11 +33,20 @@ ChainData:
         minLength: 1
         maxLength: 500
       minItems: 1
-    workspace:
-      $ref: 'ContractData'
-    applications:
-      $ref: 'ContractData'
-    grantFactory:
-      $ref: 'ContractData'
-    reviews:
-      $ref: 'ContractData'
+    qbContracts:
+      type: object
+      additionalProperties: false
+      required:
+        - workspace
+        - applications
+        - grantFactory
+        - reviews
+      properties:
+        workspace:
+          $ref: 'ContractData'
+        applications:
+          $ref: 'ContractData'
+        grantFactory:
+          $ref: 'ContractData'
+        reviews:
+          $ref: 'ContractData'

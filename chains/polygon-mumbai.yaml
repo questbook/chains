@@ -2,15 +2,16 @@ chainName: polygon-mumbai
 chainId: 80001
 rpcUrls:
   - https://polygon-mumbai.infura.io/v3/{{infura_key}}
-workspace:
-  address: '0xda717ab1206c59493e1E5c66F4e0712B39EC6D81'
-  startBlock: 26019980
-applications:
-  address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
-  startBlock: 26019980
-grantFactory:
-  address: '0x32798CC9da06363eF2b0eE12e54cD4476D9C891a'
-  startBlock: 26019980
-reviews:
-  address: '0xF39E0AA8cA215D41dF7c9AeB3aBa76FfdAd0951F'
-  startBlock: 26019980
+qbContracts:
+  workspace:
+    address: '0xda717ab1206c59493e1E5c66F4e0712B39EC6D81'
+    startBlock: 26019980
+  applications:
+    address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
+    startBlock: 26019980
+  grantFactory:
+    address: '0x32798CC9da06363eF2b0eE12e54cD4476D9C891a'
+    startBlock: 26019980
+  reviews:
+    address: '0xF39E0AA8cA215D41dF7c9AeB3aBa76FfdAd0951F'
+    startBlock: 26019980
