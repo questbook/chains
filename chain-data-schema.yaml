@@ -9,8 +9,7 @@ ContractData:
     address:
       type: string
       format: hex
-      description: Address of the contract deployment
-      example: '0x0000000000000000000000000000000000000000'
+      description: Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
     startBlock:
       type: integer
       minimum: 0
