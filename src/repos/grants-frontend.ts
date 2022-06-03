@@ -30,14 +30,17 @@ const grantsFrontend: CIRepo = {
 			(dict, chain) => {
 				dict[chain.chainId] = {
 					id: chain.chainId,
-					name: chain.chainName,
+					name: chain.userFacingName,
 					isTestNetwork: chain.isTestNetwork,
 					icon: join(ASSETS_FOLDER_REL, chain.icon),
 					wallets: chain.supportedWallets,
 					explorer: chain.explorer,
 					supportedCurrencies: chain.supportedCurrencies.reduce(
 						(dict, currency) => {
-							dict[currency.address] = currency
+							dict[currency.address] = {
+								...currency,
+								icon: join(ASSETS_FOLDER_REL, currency.icon)
+							}
 							return dict
 						}, { } as { [_: string]: any }
 					),
