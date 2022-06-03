@@ -1,5 +1,6 @@
 {
 	"chainsDirectory": "./chains",
+	"chainSchemaYamlFile": "./chain-data-schema.yaml",
 	"organisationUrl": "https://github.com/questbook/",
 	"tmpFolder": "./tmp"
 }
