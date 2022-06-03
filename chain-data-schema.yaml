@@ -79,11 +79,13 @@ ChainData:
           description: |-
             mustache templated URL of the address page. 
             {{address}} will be replaced with the address
+          pattern: '\{\{address\}\}'
         transactionHash:
           type: string
           description: |-
             mustache templated URL to view a transaction hash on the explorer. 
-            {{tx}} will be replaced with the address
+            {{tx}} will be replaced with the transaction hash
+          pattern: '\{\{tx\}\}'
 ContractData:
   type: object
   additionalProperties: false

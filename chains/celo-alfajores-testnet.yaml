@@ -23,8 +23,8 @@ supportedWallets:
     - injected
     - walletConnect
 explorer:
-  address: ""
-  transactionHash: ""
+  address: 'https://alfajores-blockscout.celo-testnet.org/address/{{address}}'
+  transactionHash: 'https://alfajores-blockscout.celo-testnet.org/tx/{{tx}}'
 supportedCurrencies:
  - icon: "dai.svg"
    label: "DAI"
