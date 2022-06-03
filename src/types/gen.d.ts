@@ -29,7 +29,7 @@ export interface ChainData {
   /**
    * List of supported wallets
    */
-  supportedWallets: ["metamask" | "walletConnect", ...("metamask" | "walletConnect")[]];
+  supportedWallets: ["injected" | "walletConnect", ...("injected" | "walletConnect")[]];
   /**
    * Specify as many RPC urls you'd like for the chain
    */

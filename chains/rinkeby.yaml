@@ -20,7 +20,7 @@ qbContracts:
     address: '0x54F1f6aAe77D2E3feA4c40A7d99E4aDcEFa00c79'
     startBlock: 10456251
 supportedWallets:
-  - metamask
+  - injected
   - walletConnect
 explorer:
   address: https://rinkeby.etherscan.io/address/{{address}}

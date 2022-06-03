@@ -127,5 +127,5 @@ SupportedCurrency:
 SupportedWallet:
   type: string
   enum:
-    - metamask
+    - injected
     - walletConnect
