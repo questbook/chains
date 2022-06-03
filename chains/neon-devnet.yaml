@@ -1,5 +1,8 @@
 chainName: neon-devnet
 chainId: 245022926
+icon: neon_symbol.svg
+isTestNetwork: true
+userFacingName: Neon Devnet
 rpcUrls:
   - http://neon-devnet-rpc.questbook.app:9090/solana
 qbContracts:
@@ -15,3 +18,22 @@ qbContracts:
   reviews:
     address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
     startBlock: 136788319
+supportedWallets:
+    - injected
+    - walletConnect
+explorer:
+  address: https://neonscan.org/{{address}}/
+  transactionHash: https://neonscan.org/{{tx}}/
+supportedCurrencies:
+  - icon: "dai_icon.svg"
+    label: DAI
+    address: '0x7ad98aeadbbcdf3693b0b53c09da4033704c9322'
+    decimals: 9
+  - icon: "neon_symbol.svg"
+    label: WNEON
+    address: '0xf8ad328e98f85fccbf09e43b16dcbbda7e84beab'
+    decimals: 18
+  - icon: "usdc_icon.svg"
+    label: USDC
+    address: '0x2578c6c1ac883443388edd688ca10e87d088bfa8'
+    decimals: 6
