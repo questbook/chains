@@ -2,7 +2,7 @@ chainName: celo-alfajores-testnet
 chainId: 44787
 userFacingName: Celo Testnet
 isTestNetwork: true
-icon: "celo.svg"
+icon: ""
 rpcUrls:
   - https://alfajores-forno.celo-testnet.org
 qbContracts:
@@ -26,7 +26,7 @@ explorer:
   address: ""
   transactionHash: ""
 supportedCurrencies:
- - icon: "dai_icon.svg"
+ - icon: "dai.svg"
    label: "DAI"
    address: "0xE4fE50cdD716522A56204352f00AA110F731932d"
    decimals: 9

@@ -25,7 +25,7 @@ explorer:
   address: https://optimistic.etherscan.io/{{address}}/
   transactionHash: https://optimistic.etherscan.io/{{tx}}/
 supportedCurrencies:
-    - icon: "dai_icon.svg"
+    - icon: "dai.svg"
       label: DAI
       address: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1'
       decimals: 18
