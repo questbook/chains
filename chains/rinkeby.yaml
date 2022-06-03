@@ -1,5 +1,8 @@
 chainName: rinkeby
 chainId: 4
+userFacingName: Rinkeby
+isTestNetwork: true
+icon: eth.svg
 rpcUrls:
   # infura key is replaced when the graph node is deployed
   - https://rinkeby.infura.io/v3/{{infura_key}}
@@ -16,3 +19,22 @@ qbContracts:
   reviews:
     address: '0x54F1f6aAe77D2E3feA4c40A7d99E4aDcEFa00c79'
     startBlock: 10456251
+supportedWallets:
+  - injected
+  - walletConnect
+explorer:
+  address: https://rinkeby.etherscan.io/address/{{address}}
+  transactionHash: https://rinkeby.etherscan.io/tx/{{tx}}
+supportedCurrencies:
+  - icon: dai.svg
+    label: DAI
+    address: '0xc7ad46e0b8a400bb3c915120d284aafba8fc4735'
+    decimals: 18
+  - icon: weth.svg
+    label: WETH
+    address: '0xc778417e063141139fce010982780140aa0cd5ab'
+    decimals: 18
+  - icon: usdc.svg
+    label: USDC
+    address: '0xeb8f08a975ab53e34d8a0330e0d34de942c95926'
+    decimals: 6

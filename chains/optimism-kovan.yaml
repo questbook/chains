@@ -1,5 +1,8 @@
 chainName: optimism-kovan
 chainId: 69
+icon: eth.svg
+isTestNetwork: false
+userFacingName: Optimism Testnet
 rpcUrls:
   - https://optimism-kovan.infura.io/v3/{{infura_key}}
 qbContracts:
@@ -15,3 +18,14 @@ qbContracts:
   reviews:
     address: '0x6178d7Ac94E045d39850Ef6f35cCD0D4851DAbeC'
     startBlock: 194188
+supportedWallets:
+    - injected
+    - walletConnect
+explorer:
+  address: https://optimistic.etherscan.io/{{address}}/
+  transactionHash: https://optimistic.etherscan.io/{{tx}}/
+supportedCurrencies:
+    - icon: "dai.svg"
+      label: DAI
+      address: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1'
+      decimals: 18

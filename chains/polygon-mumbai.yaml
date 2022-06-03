@@ -1,5 +1,8 @@
 chainName: polygon-mumbai
 chainId: 80001
+isTestNetwork: true
+icon: matic.svg
+userFacingName: Polygon Testnet
 rpcUrls:
   - https://polygon-mumbai.infura.io/v3/{{infura_key}}
 qbContracts:
@@ -15,3 +18,18 @@ qbContracts:
   reviews:
     address: '0xF39E0AA8cA215D41dF7c9AeB3aBa76FfdAd0951F'
     startBlock: 26019980
+supportedWallets:
+    - injected
+    - walletConnect
+explorer:
+  address: https://mumbai.polygonscan.com/{{address}}/
+  transactionHash: https://mumbai.polygonscan.com/{{tx}}/
+supportedCurrencies:
+      - icon: "matic.svg"
+        label: WMATIC
+        address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
+        decimals: 18
+      - icon: "usdc.svg"
+        label: USDC
+        address: '0xe6b8a5cf854791412c1f6efc7caf629f5df1c747'
+        decimals: 6

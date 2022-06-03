@@ -1,5 +1,8 @@
 chainName: harmony-testnet
 chainId: 1666700000
+icon: harmony.svg
+isTestNetwork: true
+userFacingName: Harmony Testnet ONE
 rpcUrls:
   - https://api.s0.pops.one
 qbContracts:
@@ -15,3 +18,22 @@ qbContracts:
   reviews:
     address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
     startBlock: 21595903
+supportedWallets:
+    - injected
+    - walletConnect
+explorer:
+  address: https://explorer.pops.one/{{address}}/
+  transactionHash: https://explorer.pops.one/{{tx}}/
+supportedCurrencies:
+   - icon: "usdc.svg"
+     label: USDC
+     address: '0x778fbd9df477b888534ebd84a3d2c9d5347bf149'
+     decimals: 6
+   - icon: "dai.svg"
+     label: 1DAI
+     address: '0xc27255d7805fc79e4616d5cd50d6f4464aea75a3'
+     decimals: 18
+   - icon: "weth.svg"
+     label: 1ETH
+     address: '0x1e120b3b4af96e7f394ecaf84375b1c661830013'
+     decimals: 18

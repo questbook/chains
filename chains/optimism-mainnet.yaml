@@ -1,5 +1,8 @@
 chainName: optimism-mainnet
 chainId: 10
+icon: eth.svg
+isTestNetwork: false
+userFacingName: Optimism Mainnet
 rpcUrls:
   - https://optimism-mainnet.infura.io/v3/{{infura_key}}
 qbContracts:
@@ -15,4 +18,34 @@ qbContracts:
   reviews:
     address: '0xab163375C1aD08e24005771cC9908a1C7c61Adaa'
     startBlock: 5931811
-
+supportedWallets:
+    - injected
+    - walletConnect
+explorer:
+  address: https://optimistic.etherscan.io/{{address}}/
+  transactionHash: https://optimistic.etherscan.io/{{tx}}/
+supportedCurrencies:
+    - icon: "dai.svg"
+      label: DAI
+      address: '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1'
+      decimals: 18
+    - icon: "weth.svg"
+      label: WETH
+      address: '0x4200000000000000000000000000000000000006'
+      decimals: 18
+    - icon: "usdc.svg"
+      label: USDC
+      address: '0x7f5c764cbc14f9669b88837ca1490cca17c31607'
+      decimals: 6
+    - icon: "perp.svg"
+      label: PERP
+      address: '0x9e1028f5f1d5ede59748ffcee5532509976840e0'
+      decimals: 18
+    - icon: "snx.svg"
+      label: SNX
+      address: '0x8700daec35af8ff88c16bdf0418774cb3d7599b4'
+      decimals: 18
+    - icon: "sUSD.svg"
+      label: sUSD
+      address: '0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9'
+      decimals: 18
