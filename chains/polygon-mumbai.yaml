@@ -1,7 +1,7 @@
 chainName: polygon-mumbai
 chainId: 80001
 isTestNetwork: true
-icon: matic_symbol.svg
+icon: matic.svg
 userFacingName: Polygon Testnet
 rpcUrls:
   - https://polygon-mumbai.infura.io/v3/{{infura_key}}
