@@ -25,7 +25,7 @@ export interface ChainData {
   /**
    * Name of the icon in the 'chain assets' folder
    */
-  icon?: string;
+  icon: string;
   /**
    * List of supported wallets
    */
@@ -111,6 +111,5 @@ export interface ChainData {
      * {{tx}} will be replaced with the address
      */
     transactionHash: string;
-    [k: string]: unknown;
   };
 }

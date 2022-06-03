@@ -7,6 +7,7 @@ ChainData:
     - chainId
     - supportedWallets
     - isTestNetwork
+    - icon
     - rpcUrls
     - qbContracts
     - supportedCurrencies
@@ -68,6 +69,7 @@ ChainData:
     explorer:
       type: object
       description: Data about the explorer for the chain
+      additionalProperties: false
       required:
         - address
         - transactionHash
