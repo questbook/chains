@@ -15,3 +15,37 @@ qbContracts:
   reviews:
     address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
     startBlock: 21595903
+nativeCurrency:
+  name: Harmony Testnet ONE
+  symbol: ONE
+  decimals: 18
+icon: "/network_icons/harmony.svg"
+wallets:
+  - id: injected
+    name: Metamask
+    icon: "/wallet_icons/metamask.svg"
+  - id: walletConnect
+    name: Wallet Connect
+    icon: "/wallet_icons/walletconnect.svg"
+explorer:
+  address: https://explorer.pops.one/address/
+  transactionHash: https://explorer.pops.one/tx/
+supportedCurrencies:
+  '0x778fbd9df477b888534ebd84a3d2c9d5347bf149':
+    icon: "/ui_icons/brand/currency/usdc_icon.svg"
+    label: USDC
+    address: '0x778fbd9df477b888534ebd84a3d2c9d5347bf149'
+    decimals: 6
+  '0xc27255d7805fc79e4616d5cd50d6f4464aea75a3':
+    icon: "/ui_icons/brand/currency/dai_icon.svg"
+    label: 1DAI
+    address: '0xc27255d7805fc79e4616d5cd50d6f4464aea75a3'
+    decimals: 18
+  '0x1e120b3b4af96e7f394ecaf84375b1c661830013':
+    icon: "/ui_icons/brand/currency/weth_icon.svg"
+    label: 1ETH
+    address: '0x1e120b3b4af96e7f394ecaf84375b1c661830013'
+    decimals: 18
+subgraphClientUrl: https://the-graph.questbook.app/subgraphs/name/qb-subgraph-harmonytest
+# rpcUrls:
+# - https://api.s0.b.hmny.io
