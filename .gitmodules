@@ -1,0 +1,3 @@
+[submodule "contracts/evm"]
+	path = contracts/evm
+	url = https://github.com/questbook/grants-contracts-upgradeable.git
