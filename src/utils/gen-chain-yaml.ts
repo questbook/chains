@@ -1,6 +1,7 @@
 import { writeFile, unlink } from "fs/promises"
 import { join } from "path"
-import config from '../../../grants-contracts-upgradeable/config.json'
+// import config from '../../../grants-contracts-upgradeable/config.json'
+import config from '../../contracts/evm/config.json'
 import { ChainData } from "../types"
 import { readYaml, writeYaml } from "./yaml"
 import { chainsDirectory } from '../config.json'
@@ -38,7 +39,7 @@ const generateChainYaml = async (chainName: string | undefined) => {
     // Save the yaml file
     await writeYaml(yamlFilePath, yaml)
     // Delete the config file
-    unlink(join(TEMP_CONFIG_PATH, 'config.json'))
+    // unlink(join(TEMP_CONFIG_PATH, 'config.json'))
 }
 
 const chainName = getArg('chain-name')

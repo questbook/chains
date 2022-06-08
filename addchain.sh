@@ -7,7 +7,7 @@ while getopts "n:" arg; do
 done
 
 echo "Generating chains in grant-contracts-upgradable repo"
-ts-node src --dry-run --repo grants-contracts-upgradeable
+ts-node src --dry-run --no-validate --repo grants-contracts-upgradeable
 
 cp tmp/grants-contracts-upgradeable/chains.json contracts/evm/chains.json
 
