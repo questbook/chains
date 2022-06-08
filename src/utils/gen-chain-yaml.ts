@@ -14,7 +14,7 @@ const generateChainYaml = async (chainName: string | undefined) => {
     // Read yaml file from inside chains folder
     const yamlFilePath = join(chainsDirectory, `${chainName}.yaml`)
     let yaml = await readYaml<ChainData>(yamlFilePath)
-
+    console.log('Writing the contract addresses')
     // Write the values of contract addresses from config to the yaml file
     const qbContracts = {
         "applications": {

@@ -9,8 +9,7 @@
     "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx",
     "lint:fix": "eslint ./src --fix --ext .js,.ts,.jsx,.tsx",
     "gen:types": "ts-node src/utils/gen-types",
-    "add:chain": "ts-node src --repo grants-contracts-upgradeable",
-    "update:chain": "ts-node src/utils/gen-chain-yaml --chain-name $CHAIN"
+    "add:chain": "ts-node src --dry-run --repo grants-contracts-upgradeable && cd contracts/evm && yarn && yarn typechain && NETWORK=$NETWORK npm run deploy && cd ../.. && ts-node src/utils/gen-chain-yaml --chain-name $NETWORK"
   },
   "keywords": [],
   "author": "Adhiraj Singh",
