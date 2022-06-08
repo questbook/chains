@@ -2,14 +2,19 @@ import repos from "./repos"
 import getArg from "./utils/get-arg"
 import { addAndPushToRepo, cloneRepo } from "./utils/git"
 import { execPromiseInDirectory } from "./utils/misc"
-import validateChains from "./utils/validate-chains"
+import getAllChainsData from "./utils/get-all-chains-data"
 
-const execute = async(isDryRun: boolean, repoFilter: string[] | undefined) => {
+const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, validate: boolean) => {
+	if(!validate) {
+		console.log('not validating chains -- also forcing dry run')
+		isDryRun = true
+	}
+
 	if(isDryRun) {
 		console.log('dry run, not pushing to repos')
 	}
 
-	const chainMap = await validateChains()
+	const chainMap = await getAllChainsData(validate)
 
 	console.log(`got ${Object.keys(chainMap).length} chains`)
 
@@ -56,5 +61,7 @@ const execute = async(isDryRun: boolean, repoFilter: string[] | undefined) => {
 }
 
 const isDryRun = process.argv.includes('--dry-run')
+const doValidate = !process.argv.includes('--no-validate')
 const repoFilter = getArg('repo')
-execute(isDryRun, repoFilter ? [repoFilter] : undefined)
+
+execute(isDryRun, repoFilter ? [repoFilter] : undefined, doValidate)
