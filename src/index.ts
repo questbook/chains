@@ -1,19 +1,31 @@
 import repos from "./repos"
+import getArg from "./utils/get-arg"
 import { addAndPushToRepo, cloneRepo } from "./utils/git"
 import { execPromiseInDirectory } from "./utils/misc"
-import validateChains from "./utils/validate-chains"
+import getAllChainsData from "./utils/get-all-chains-data"
 
-const execute = async(isDryRun: boolean) => {
+const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, validate: boolean) => {
+	if(!validate) {
+		console.log('not validating chains -- also forcing dry run')
+		isDryRun = true
+	}
+
 	if(isDryRun) {
 		console.log('dry run, not pushing to repos')
 	}
 
-	const chainMap = await validateChains()
+	const chainMap = await getAllChainsData(validate)
 
 	console.log(`got ${Object.keys(chainMap).length} chains`)
 
 	const repoDirectories: { name: string, path: string }[] = []
-	for(const { repoName, doCI } of repos) {
+	const filteredRepos = repoFilter 
+		? repos.filter(repo => repoFilter.includes(repo.repoName)) 
+		: repos
+	
+	console.log(`doing CI for ${filteredRepos.length} repos`)
+
+	for(const { repoName, doCI } of filteredRepos) {
 		console.log(`cloning ${repoName}...`)
 		const repoPath = await cloneRepo(repoName)
 		console.log(`cloned ${repoName}, performing CI...`)
@@ -49,4 +61,7 @@ const execute = async(isDryRun: boolean) => {
 }
 
 const isDryRun = process.argv.includes('--dry-run')
-execute(isDryRun)
+const doValidate = !process.argv.includes('--no-validate')
+const repoFilter = getArg('repo')
+
+execute(isDryRun, repoFilter ? [repoFilter] : undefined, doValidate)

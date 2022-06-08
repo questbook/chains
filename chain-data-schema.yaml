@@ -1,37 +1,40 @@
-ContractData:
-  $id: ContractData
-  type: object
-  additionalProperties: false
-  required:
-    - address
-    - startBlock
-  properties:
-    address:
-      type: string
-      format: hex
-      description: Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
-    startBlock:
-      type: integer
-      minimum: 0
-      description: >-
-        What block to start indexing the contract.
-        Could be any block after contract deployment
 ChainData:
-  $id: ChainData
   type: object
   additionalProperties: false
   required:
     - chainName
+    - userFacingName
     - chainId
+    - supportedWallets
+    - isTestNetwork
+    - icon
     - rpcUrls
     - qbContracts
+    - supportedCurrencies
+    - explorer
   properties:
     chainName:
       type: string
-      description: Name of the chain, has to be the same as the name of the chain config file
+      description: Internal name of the chain, has to be the same as the name of the chain config file
+    userFacingName:
+      type: string
+      description: The name of the chain, as shown to lay users
     chainId:
       type: integer
       description: ID of the chain
+    isTestNetwork:
+      type: boolean
+      description: Is this a test/dev network. Test networks are only available on beta.questbook.app
+    icon:
+      type: string
+      description: Name of the icon in the 'chain assets' folder
+    supportedWallets:
+      type: array
+      description: List of supported wallets
+      items:
+        $ref: SupportedWallet
+      minItems: 1
+      uniqueItems: true
     rpcUrls:
       type: array
       items:
@@ -40,6 +43,7 @@ ChainData:
         maxLength: 500
       minItems: 1
       description: Specify as many RPC urls you'd like for the chain
+      uniqueItems: true
     qbContracts:
       type: object
       description: Data about where the QB contracts are deployed on the chain
@@ -58,3 +62,72 @@ ChainData:
           $ref: 'ContractData'
         reviews:
           $ref: 'ContractData'
+    supportedCurrencies:
+      type: array
+      items:
+        $ref: 'SupportedCurrency'
+    explorer:
+      type: object
+      description: Data about the explorer for the chain
+      additionalProperties: false
+      required:
+        - address
+        - transactionHash
+      properties:
+        address:
+          type: string
+          description: |-
+            mustache templated URL of the address page. 
+            {{address}} will be replaced with the address
+          pattern: '\{\{address\}\}'
+        transactionHash:
+          type: string
+          description: |-
+            mustache templated URL to view a transaction hash on the explorer. 
+            {{tx}} will be replaced with the transaction hash
+          pattern: '\{\{tx\}\}'
+ContractData:
+  type: object
+  additionalProperties: false
+  required:
+    - address
+    - startBlock
+  properties:
+    address:
+      type: string
+      format: hex
+      description: Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
+    startBlock:
+      type: integer
+      minimum: 0
+      description: >-
+        What block to start indexing the contract.
+        Could be any block after contract deployment
+SupportedCurrency:
+  type: object
+  additionalProperties: false
+  required:
+    - icon
+    - label
+    - address
+    - decimals
+  properties:
+    icon:
+      type: string
+      description: Name of the SVG icon of the image.
+    label:
+      type: string
+      description: User facing name of the currency
+    address:
+      type: string
+      format: hex
+      description: Address of the currency on the chain
+    decimals:
+      type: integer
+      minimum: 1
+      description: Number of decimals in the currency
+SupportedWallet:
+  type: string
+  enum:
+    - injected
+    - walletConnect

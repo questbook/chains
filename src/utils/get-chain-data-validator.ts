@@ -1,6 +1,7 @@
 import Ajv from "ajv"
 import addFormats from 'ajv-formats'
 import {readYaml} from "./yaml"
+import { chainSchemaYamlFile } from '../config.json'
 
 let validate: ((data: any) => void)
 /**
@@ -8,7 +9,7 @@ let validate: ((data: any) => void)
  */
 export default async() => {
 	if(!validate) {
-		const validatorSchema = await readYaml<any>('./chain-data-schema.yaml')
+		const validatorSchema = await readYaml<any>(chainSchemaYamlFile)
 	
 		let ajv = new Ajv({ })
 		ajv = addFormats(ajv)
