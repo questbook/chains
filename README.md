@@ -12,7 +12,7 @@ Single source of truth for all the chains supported by the QuestBook app &amp; t
     - rpcUrls
 4. Run `git submodule update --init --recursive` to extract the contracts submodule
 6. Add your deployment private keys or infura keys in .env file inside `contracts/evm/.env`. Refer `contracts/evm/.env.example` 
-5. Run `yarn:add chain ${NETWORK}` to add your chain to our official list of networks. Note: The value of `${NETWORK}` should be same as the name of your chains yaml file. For example, `yarn:add chain xyz-testnet`
+5. Run `yarn:add chain ${NETWORK}` to add your chain to our official list of networks. Note: The value of `${NETWORK}` should be same as the name of your chains yaml file. For example, `yarn add:chain xyz-testnet`
 6. This will add the contract addresses to your chain's yaml file.
 7. Enter all the remaining required configuration, as mentioned in the JSON schema stored at `./src/chain-data-schema.yaml`.
 	- This would include details like  icon, supported wallet, explorer links, supported currencies, etc.
