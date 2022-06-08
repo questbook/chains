@@ -19,19 +19,19 @@ const generateChainYaml = async (chainName: string | undefined) => {
     const qbContracts = {
         "applications": {
             "address": config.applicationRegistryAddress.proxy,
-            "startBlock": 1,
+            "startBlock": config.applicationRegistryAddress.blockNumber,
         },
         "workspace": {
             "address": config.workspaceRegistryAddress.proxy,
-            "startBlock": 1
+            "startBlock": config.workspaceRegistryAddress.blockNumber
         },
         "grantFactory": {
             "address": config.grantFactoryAddress.proxy,
-            "startBlock": 1
+            "startBlock": config.grantFactoryAddress.blockNumber
         },
         "reviews": {
             "address": config.applicationReviewRegistryAddress.proxy,
-            "startBlock": 1
+            "startBlock": config.applicationReviewRegistryAddress.blockNumber
         },
     }
     yaml = {...yaml, qbContracts}
