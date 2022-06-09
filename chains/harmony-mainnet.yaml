@@ -2,6 +2,7 @@ chainName: harmony-mainnet
 chainId: 1666600000
 icon: harmony.svg
 userFacingName: Harmony Mainnet
+isTestNetwork: false
 rpcUrls:
   - https://api.harmony.one
 qbContracts:
