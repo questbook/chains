@@ -17,7 +17,7 @@ echo "installing packages.."
 yarn
 
 echo "generating types.."
-yarn typechain
+NETWORK=$NETWORK yarn typechain
 
 echo "deploying contracts"
 NETWORK=$NETWORK npm run deploy
