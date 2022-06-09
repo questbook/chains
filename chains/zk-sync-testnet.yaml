@@ -1,0 +1,8 @@
+chainName: zk-sync-testnet
+chainId: 280
+userFacingName: ZkSync Testnet
+isTestNetwork: true
+icon: zkp.svg
+rpcUrls:
+  # infura key is replaced when the graph node is deployed
+  - https://zksync2-testnet.zksync.dev
