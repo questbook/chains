@@ -1,7 +1,7 @@
 chainName: optimism-kovan
 chainId: 69
 icon: eth.svg
-isTestNetwork: false
+isTestNetwork: true
 userFacingName: Optimism Testnet
 rpcUrls:
   - https://optimism-kovan.infura.io/v3/{{infura_key}}
