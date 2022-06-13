@@ -2,7 +2,7 @@ chainName: celo-alfajores-testnet
 chainId: 44787
 userFacingName: Celo Testnet
 isTestNetwork: true
-icon: ""
+icon: "celo.svg"
 rpcUrls:
   - https://alfajores-forno.celo-testnet.org
 qbContracts:
