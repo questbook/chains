@@ -1,6 +1,6 @@
 chainName: polygon-mainnet
 chainId: 137
-isTestNetwork: true
+isTestNetwork: false
 icon: matic.svg
 userFacingName: Polygon Mainnet
 rpcUrls:
