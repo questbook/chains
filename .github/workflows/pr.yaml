@@ -8,15 +8,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.GH_TOKEN }}
-
-    - name: Config GitHub
-      run: |
-        echo -e "machine github.com\nlogin ${{ secrets.GH_TOKEN }}\npassword x-oauth-basic" > $HOME/.netrc
-        chmod 600 $HOME/.netrc
-        git config --global user.email "engineering@creatoros.co"
-        git config --global user.name "QuestBook CI Bot"
 
     - name: Node v16
       uses: actions/setup-node@v1
