@@ -22,8 +22,8 @@ supportedWallets:
     - injected
     - walletConnect
 explorer:
-  address: https://mumbai.polygonscan.com/{{address}}/
-  transactionHash: https://mumbai.polygonscan.com/{{tx}}/
+  address: https://mumbai.polygonscan.com/address/{{address}}/
+  transactionHash: https://mumbai.polygonscan.com/tx/{{tx}}/
 supportedCurrencies:
       - icon: "matic.svg"
         label: WMATIC

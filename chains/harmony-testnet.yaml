@@ -22,8 +22,8 @@ supportedWallets:
     - injected
     - walletConnect
 explorer:
-  address: https://explorer.pops.one/{{address}}/
-  transactionHash: https://explorer.pops.one/{{tx}}/
+  address: https://explorer.pops.one/address/{{address}}/
+  transactionHash: https://explorer.pops.one/tx/{{tx}}/
 supportedCurrencies:
    - icon: "usdc.svg"
      label: USDC

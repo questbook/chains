@@ -22,8 +22,8 @@ supportedWallets:
     - injected
     - walletConnect
 explorer:
-  address: https://neonscan.org/{{address}}/
-  transactionHash: https://neonscan.org/{{tx}}/
+  address: https://neonscan.org/address/{{address}}/
+  transactionHash: https://neonscan.org/tx/{{tx}}/
 supportedCurrencies:
   - icon: "dai.svg"
     label: DAI

@@ -22,8 +22,8 @@ supportedWallets:
     - injected
     - walletConnect
 explorer:
-  address: https://optimistic.etherscan.io/{{address}}/
-  transactionHash: https://optimistic.etherscan.io/{{tx}}/
+  address: https://optimistic.etherscan.io/address/{{address}}/
+  transactionHash: https://optimistic.etherscan.io/tx/{{tx}}/
 supportedCurrencies:
     - icon: "dai.svg"
       label: DAI

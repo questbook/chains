@@ -23,8 +23,8 @@ supportedWallets:
   -  injected
   -  walletConnect
 explorer:
-  address: https://polygonscan.com/{{address}}/
-  transactionHash: https://polygonscan.com/{{tx}}/
+  address: https://polygonscan.com/address/{{address}}/
+  transactionHash: https://polygonscan.com/tx/{{tx}}/
 supportedCurrencies:
     - icon: "dai.svg"
       label: DAI
