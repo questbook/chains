@@ -1,0 +1,4 @@
+chainName: klaytn-testnet
+chainId: 1001
+rpcUrls:
+  - https://api.baobab.klaytn.net:8651
