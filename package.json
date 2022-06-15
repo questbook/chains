@@ -9,7 +9,7 @@
     "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx",
     "lint:fix": "eslint ./src --fix --ext .js,.ts,.jsx,.tsx",
     "gen:types": "ts-node src/utils/gen-types",
-    "add:chain": "bash ./addchain.sh -n $NETWORK"
+    "add:chain": "bash ./addchain.sh -n"
   },
   "keywords": [],
   "author": "Adhiraj Singh",
