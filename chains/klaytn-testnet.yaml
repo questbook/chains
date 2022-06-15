@@ -1,5 +1,7 @@
 chainName: klaytn-testnet
 chainId: 1001
+userFacingName: Klaytn Testnet
+isTestNetwork: true
 rpcUrls:
   - https://api.baobab.klaytn.net:8651
 qbContracts:
