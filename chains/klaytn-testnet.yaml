@@ -21,3 +21,8 @@ qbContracts:
   reviews:
     address: '0x6C3136f06dCcA37395B62fb858057e669b002f54'
     startBlock: 93735921
+supportedCurrencies:
+  - icon: "klay.svg"
+    label: "KLAY"
+    address: "0x9330dd6713c8328a8d82b14e3f60a0f0b4cc7bfb"
+    decimals: 18                                                                                                         
