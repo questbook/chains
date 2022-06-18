@@ -1,0 +1,31 @@
+chainName: klaytn-testnet
+chainId: 1001
+userFacingName: Klaytn Testnet
+isTestNetwork: true
+icon: klay.svg
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://api.baobab.klaytn.net:8651
+qbContracts:
+  applications:
+    address: '0xfe333a7526AFfD0aB20A4478D157DEEd0daAFECD'
+    startBlock: 93735898
+  workspace:
+    address: '0x39e2996A90C29f4ff584da164773a2c2Cc42c0dF'
+    startBlock: 93735865
+  grantFactory:
+    address: '0xC28cfc0A89A920313C6125fe4fD196E2308cB337'
+    startBlock: 93735881
+  reviews:
+    address: '0x6C3136f06dCcA37395B62fb858057e669b002f54'
+    startBlock: 93735921
+supportedCurrencies:
+  - icon: "klay.svg"
+    label: "KLAY"
+    address: "0x9330dd6713c8328a8d82b14e3f60a0f0b4cc7bfb"
+    decimals: 18                                                                                                         
+explorer:
+  address: 'https://baobab.scope.klaytn.com/account/{{address}}'
+  transactionHash: 'https://baobab.scope.klaytn.com/tx/{{tx}}'
