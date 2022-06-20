@@ -22,7 +22,7 @@ const subgraph: CIRepo = {
 			'\n}'
 		let didReplace = false
 		graphQl = graphQl.replace(
-			/enum SupportedNetwork \{[\s0-9a-z\,\_]+}/im,
+			/enum SupportedNetwork {[^\}]+}/im,
 			() => {
 				didReplace = true
 				return supportedNetworkEnum
