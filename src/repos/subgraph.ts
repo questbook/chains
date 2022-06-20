@@ -20,7 +20,18 @@ const subgraph: CIRepo = {
 			)
 			.join('') +
 			'\n}'
-		graphQl = graphQl.replace(/enum SupportedNetwork \{[\s0-9a-z\,\_]+}/im, supportedNetworkEnum)
+		let didReplace = false
+		graphQl = graphQl.replace(
+			/enum SupportedNetwork \{[\s0-9a-z\,\_]+}/im,
+			() => {
+				didReplace = true
+				return supportedNetworkEnum
+			}
+		)
+
+		if(!didReplace) {
+			throw new Error('Failed to find "SupportedNetwork" enum in schema.graphql')
+		}
 
 		const configsFolderPath = join(repoPath, CONFIGS_FOLDER)
 		await rm(configsFolderPath, { recursive: true, force: true })
