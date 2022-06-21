@@ -10,17 +10,17 @@ rpcUrls:
   - https://api.baobab.klaytn.net:8651
 qbContracts:
   applications:
-    address: '0xfe333a7526AFfD0aB20A4478D157DEEd0daAFECD'
-    startBlock: 93735898
+    address: '0xD5c4F27fdBC665DBe851fFa5bB8a7DB934B8e05f'
+    startBlock: 94213323
   workspace:
-    address: '0x39e2996A90C29f4ff584da164773a2c2Cc42c0dF'
-    startBlock: 93735865
+    address: '0x635CBA2Aa0064f90A66107c8c144a4Fc8Dc6b6Ac'
+    startBlock: 94213282
   grantFactory:
-    address: '0xC28cfc0A89A920313C6125fe4fD196E2308cB337'
-    startBlock: 93735881
+    address: '0xe374A2407b6Ac748caC70300DD5A88ba39769a49'
+    startBlock: 94213302
   reviews:
-    address: '0x6C3136f06dCcA37395B62fb858057e669b002f54'
-    startBlock: 93735921
+    address: '0x367F1D6ac3EF6586DA9F893BB38Af5571A9EC10A'
+    startBlock: 94213346
 supportedCurrencies:
   - icon: "klay.svg"
     label: "KLAY"
