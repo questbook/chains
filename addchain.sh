@@ -21,6 +21,7 @@ NETWORK=$NETWORK yarn typechain
 
 echo "deploying contracts"
 NETWORK=$NETWORK npm run deploy
+NETWORK=$NETWORK npm run postdeploy
 cd ../.. 
 
 echo "adding contract addresses and block numbers to your chain's yaml file"
