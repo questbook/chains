@@ -1,0 +1,31 @@
+chainName: findora-testnet
+chainId: 2153
+userFacingName: Findora Testnet
+isTestNetwork: true
+icon: findora.png
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://prod-testnet.prod.findora.org:8545
+supportedCurrencies:
+  - icon: findora.png
+    label: FRA
+    address: '0x0000000000000000000000000000000000001000'
+    decimals: 18
+explorer:
+  address: https://testnet-anvil.evm.findorascan.io/address/{{address}}
+  transactionHash: https://testnet-anvil.evm.findorascan.io/tx/{{tx}}
+qbContracts:
+  applications:
+    address: '0x32798CC9da06363eF2b0eE12e54cD4476D9C891a'
+    startBlock: 817167
+  workspace:
+    address: '0x6D0f81BDA11995f25921aAd5B43359630E65Ca96'
+    startBlock: 817161
+  grantFactory:
+    address: '0xda717ab1206c59493e1E5c66F4e0712B39EC6D81'
+    startBlock: 817163
+  reviews:
+    address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
+    startBlock: 817170
