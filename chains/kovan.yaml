@@ -1,0 +1,39 @@
+chainName: kovan
+chainId: 42
+userFacingName: Kovan
+isTestNetwork: true
+icon: eth.svg
+rpcUrls:
+  - https://kovan.infura.io/v3/{{infura_key}}
+supportedWallets:
+  - injected
+  - walletConnect
+explorer:
+  address: https://kovan.etherscan.io/address/{{address}}
+  transactionHash: https://kovan.etherscan.io/tx/{{tx}}
+supportedCurrencies:
+  - icon: dai.svg
+    label: DAI
+    address: '0x04DF6e4121c27713ED22341E7c7Df330F56f289B'
+    decimals: 18
+  - icon: weth.svg
+    label: WETH
+    address: '0xd0A1E359811322d97991E03f863a0C30C2cF029C'
+    decimals: 18
+  - icon: usdc.svg
+    label: USDC
+    address: '0xe22da380ee6B445bb8273C81944ADEB6E8450422'
+    decimals: 6
+qbContracts:
+  applications:
+    address: '0x611a8740ed9B18d7C78e2286E651c4970eEC4AA1'
+    startBlock: 32329715
+  workspace:
+    address: '0xA23FAe98239E5a8d5F1D2944725d06F2E79226EB'
+    startBlock: 32329694
+  grantFactory:
+    address: '0xAeee48268A49508FB246E7D563f5b01Fd10f4758'
+    startBlock: 32329704
+  reviews:
+    address: '0x2704726624bEeE50435aA5364820C61026B56214'
+    startBlock: 32329726
