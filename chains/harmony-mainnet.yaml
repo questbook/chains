@@ -27,5 +27,5 @@ explorer:
 supportedCurrencies:
   - icon: "usdc.svg"
     label: USDC
-    address: '0x985458E523dB3d53125813eD68c274899e9DfAb4'
+    address: '0x985458e523db3d53125813ed68c274899e9dfab4'
     decimals: 6
