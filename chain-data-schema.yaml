@@ -67,7 +67,7 @@ ChainData:
       items:
         $ref: 'SupportedCurrency'
     nativeCurrency:
-      type: array
+      type: object
       items:
         $ref: 'NativeCurrency'
     explorer:
