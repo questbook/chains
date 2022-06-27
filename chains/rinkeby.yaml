@@ -25,6 +25,10 @@ supportedWallets:
 explorer:
   address: https://rinkeby.etherscan.io/address/{{address}}
   transactionHash: https://rinkeby.etherscan.io/tx/{{tx}}
+nativeCurrency:
+  name: 'Rinkeby ETH'
+  symbol: 'ETH'
+  decimals: 18
 supportedCurrencies:
   - icon: dai.svg
     label: DAI

@@ -55,6 +55,11 @@ const grantsFrontend: CIRepo = {
 						// replace any templates with empty strings
 						url => url.replace(/{{[a-z_-]+}}/gi, '')
 					),
+					nativeCurrency: chain.nativeCurrency ?? {
+						name: 'Unsupported Currency',
+						symbol: 'UNSUP',
+						decimals: 18,
+					}
 				}
 				return dict
 			}, { } as { [_: string]: any }

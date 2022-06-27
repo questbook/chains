@@ -97,6 +97,24 @@ export interface ChainData {
      */
     decimals: number;
   }[];
+  nativeCurrency?: {
+    /**
+     * Name of the SVG icon of the image.
+     */
+    icon: string;
+    /**
+     * User facing name of the currency
+     */
+    label: string;
+    /**
+     * Address of the currency on the chain
+     */
+    address: string;
+    /**
+     * Number of decimals in the currency
+     */
+    decimals: number;
+  }[];
   /**
    * Data about the explorer for the chain
    */
@@ -108,7 +126,7 @@ export interface ChainData {
     address: string;
     /**
      * mustache templated URL to view a transaction hash on the explorer.
-     * {{tx}} will be replaced with the address
+     * {{tx}} will be replaced with the transaction hash
      */
     transactionHash: string;
   };
