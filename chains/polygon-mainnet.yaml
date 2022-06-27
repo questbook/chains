@@ -76,7 +76,7 @@ supportedCurrencies:
       decimals: 18
     - icon: "spruce.svg"
       label: SPR
-      address: '0x62c4b802f2153a281dc87994427F606f561Cc620'
+      address: '0x62c4b802f2153a281dc87994427f606f561cc620'
       decimals: 18
     - icon: "stackos.svg"
       label: STACK

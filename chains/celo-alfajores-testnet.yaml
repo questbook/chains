@@ -28,7 +28,7 @@ explorer:
 supportedCurrencies:
  - icon: "dai.svg"
    label: "DAI"
-   address: "0x7d91E51C8F218f7140188A155f5C75388630B6a8"
+   address: "0x7d91e51c8f218f7140188a155f5c75388630b6a8"
    decimals: 18
  - icon: celo_token.svg
    label: "CELO"
