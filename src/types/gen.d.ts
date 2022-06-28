@@ -99,22 +99,19 @@ export interface ChainData {
   }[];
   nativeCurrency?: {
     /**
-     * Name of the SVG icon of the image.
+     * Name of the native currency
      */
-    icon: string;
+    name: string;
     /**
-     * User facing name of the currency
+     * Symbol of the native currency
      */
-    label: string;
-    /**
-     * Address of the currency on the chain
-     */
-    address: string;
+    symbol: string;
     /**
      * Number of decimals in the currency
      */
     decimals: number;
-  }[];
+    [k: string]: unknown;
+  };
   /**
    * Data about the explorer for the chain
    */

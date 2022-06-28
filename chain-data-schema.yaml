@@ -68,8 +68,21 @@ ChainData:
         $ref: 'SupportedCurrency'
     nativeCurrency:
       type: object
-      items:
-        $ref: 'NativeCurrency'
+      required:
+        - name
+        - symbol
+        - decimals
+      properties:
+        name:
+          type: string
+          description: Name of the native currency
+        symbol:
+          type: string
+          description: Symbol of the native currency
+        decimals:
+          type: integer
+          minimum: 1
+          description: Number of decimals in the currency
     explorer:
       type: object
       description: Data about the explorer for the chain
@@ -135,21 +148,3 @@ SupportedWallet:
   enum:
     - injected
     - walletConnect
-NativeCurrency:
-  type: object
-  additionalProperties: false
-  required:
-    - name
-    - symbol
-    - decimals
-  properties:
-    name:
-      type: string
-      description: Name of the native currency
-    symbol:
-      type: string
-      description: Symbol of the native currency
-    decimals:
-      type: integer
-      minimum: 1
-      description: Number of decimals in the currency
