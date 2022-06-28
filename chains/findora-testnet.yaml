@@ -2,7 +2,7 @@ chainName: findora-testnet
 chainId: 2153
 userFacingName: Findora Testnet
 isTestNetwork: true
-icon: findora.png
+icon: findora.svg
 supportedWallets:
   - injected
   - walletConnect
