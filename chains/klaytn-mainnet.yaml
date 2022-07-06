@@ -12,6 +12,7 @@ supportedCurrencies:
   - icon: klay.svg
     label: WKLAY
     address: '0xe4f05a66ec68b54a58b17c22107b02e0232cc817'
+    pair: 'null'
     decimals: 18
 explorer:
   address: https://scope.klaytn.com/account/{{address}}

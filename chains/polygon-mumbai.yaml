@@ -28,8 +28,10 @@ supportedCurrencies:
       - icon: "matic.svg"
         label: WMATIC
         address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
+        pair: '0x819f3450da6f110ba6ea52195b3beafa246062de'
         decimals: 18
       - icon: "usdc.svg"
         label: USDC
         address: '0xe6b8a5cf854791412c1f6efc7caf629f5df1c747'
+        pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc'
         decimals: 6
