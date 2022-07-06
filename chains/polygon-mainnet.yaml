@@ -64,12 +64,12 @@ supportedCurrencies:
     - icon: "biconomy.svg"
       label: BICO
       address: '0x91c89a94567980f0e9723b487b0bed586ee96aa7'
-      pair: 'null'
+    pair: undefined
       decimals: 18
     - icon: "apwine.svg"
       label: APW
       address: '0x6c0ab120dbd11ba701aff6748568311668f63fe0'
-      pair: 'null'
+    pair: undefined
       decimals: 18
     -  icon: "boba.svg"
        label: BOBA
@@ -84,12 +84,12 @@ supportedCurrencies:
     - icon: "livepeer.svg"
       label: LPT
       address: '0x3962f4a0a0051dcce0be73a7e09cef5756736712'
-      pair: 'null'
+    pair: undefined
       decimals: 18
     - icon: "spruce.svg"
       label: SPR
       address: '0x62c4b802f2153a281dc87994427f606f561cc620'
-      pair: 'null'
+      pair: undefined
       decimals: 18
     - icon: "stackos.svg"
       label: STACK
@@ -99,7 +99,7 @@ supportedCurrencies:
     - icon: "uma.svg"
       label: UMA
       address: '0x3066818837c5e6ed6601bd5a91b0762877a6b731'
-      pair: 'null'
+      pair: undefined
       decimals: 18
     - icon: "uniswap.svg"
       label: UNI
@@ -114,5 +114,5 @@ supportedCurrencies:
     - icon: "zkp.svg"
       label: ZKP
       address: '0x9a06db14d639796b25a6cec6a1bf614fd98815ec'
-      pair: 'null'
+      pair: undefined
       decimals: 18

@@ -33,7 +33,7 @@ supportedCurrencies:
   - icon: "neon.svg"
     label: WNEON
     address: '0xf8ad328e98f85fccbf09e43b16dcbbda7e84beab'
-    pair: 'null'
+    pair: undefined
     decimals: 18
   - icon: "usdc.svg"
     label: USDC
