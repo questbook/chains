@@ -8,24 +8,24 @@ supportedWallets:
   - walletConnect
 rpcUrls:
   - https://api.baobab.klaytn.net:8651
+supportedCurrencies:
+  - icon: klay.svg
+    label: KLAY
+    address: '0x9330dd6713c8328a8d82b14e3f60a0f0b4cc7bfb'
+    decimals: 18
+explorer:
+  address: https://baobab.scope.klaytn.com/account/{{address}}
+  transactionHash: https://baobab.scope.klaytn.com/tx/{{tx}}
 qbContracts:
   applications:
-    address: '0xD5c4F27fdBC665DBe851fFa5bB8a7DB934B8e05f'
-    startBlock: 94213323
+    address: '0xCF6247753d0cf5CB2FEe2F291cCCfd2e9d63C8b2'
+    startBlock: 95543080
   workspace:
-    address: '0x635CBA2Aa0064f90A66107c8c144a4Fc8Dc6b6Ac'
-    startBlock: 94213282
+    address: '0x4F17f6b38f9115Bd1464253C21Ce4ec1EE2a161F'
+    startBlock: 95543052
   grantFactory:
-    address: '0xe374A2407b6Ac748caC70300DD5A88ba39769a49'
-    startBlock: 94213302
+    address: '0xf1d57f0997A3EBdD286C686d9781eE57800d3792'
+    startBlock: 95543065
   reviews:
-    address: '0x367F1D6ac3EF6586DA9F893BB38Af5571A9EC10A'
-    startBlock: 94213346
-supportedCurrencies:
-  - icon: "klay.svg"
-    label: "KLAY"
-    address: "0x9330dd6713c8328a8d82b14e3f60a0f0b4cc7bfb"
-    decimals: 18                                                                                                         
-explorer:
-  address: 'https://baobab.scope.klaytn.com/account/{{address}}'
-  transactionHash: 'https://baobab.scope.klaytn.com/tx/{{tx}}'
+    address: '0x55acDb12EAf85976b31581072C9d58Be5b3D0378'
+    startBlock: 95543092
