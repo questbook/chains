@@ -19,12 +19,12 @@ supportedCurrencies:
   - icon: celo_token.svg
     label: CELO
     address: '0x471ece3750da237f93b8e339c536989b8978a438'
-    pair: undefined
+    pair: 
     decimals: 18
   - icon: cusd.svg
     label: cUSD
     address: '0x765de816845861e75a25fca122bb6898b8b1282a'
-    pair: undefined
+    pair: 
     decimals: 18
 qbContracts:
   applications:

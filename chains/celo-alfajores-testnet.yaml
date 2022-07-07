@@ -34,10 +34,10 @@ supportedCurrencies:
  - icon: celo_token.svg
    label: "CELO"
    address: '0xf194afdf50b03e69bd7d057c1aa9e10c9954e4c9'
-    pair: undefined
+    pair: 
    decimals: 18
  - icon: cusd.svg
    label: "cUSD"
    address: '0x874069fa1eb16d44d622f2e0ca25eea172369bc1'
-    pair: undefined
+    pair: 
    decimals: 18
