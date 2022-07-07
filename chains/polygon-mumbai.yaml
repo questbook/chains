@@ -7,16 +7,16 @@ rpcUrls:
   - https://polygon-mumbai.infura.io/v3/{{infura_key}}
 qbContracts:
   applications:
-    address: '0x261ec50d06A2E1812bCa92a76ad98f41D7bD641A'
+    address: "0x261ec50d06A2E1812bCa92a76ad98f41D7bD641A"
     startBlock: 27056507
   workspace:
-    address: '0xDE5DaE7a56972589f6c1D80cf3b2eE9aAa8303cF'
+    address: "0xDE5DaE7a56972589f6c1D80cf3b2eE9aAa8303cF"
     startBlock: 27056499
   grantFactory:
-    address: '0x02961f1ba548B58A1Ffe3B381cda7CAdfC70f422'
+    address: "0x02961f1ba548B58A1Ffe3B381cda7CAdfC70f422"
     startBlock: 27056503
   reviews:
-    address: '0x03EC09846a59e1Cdd89aadAAb728B4611CcFDe78'
+    address: "0x03EC09846a59e1Cdd89aadAAb728B4611CcFDe78"
     startBlock: 27056514
 supportedWallets:
   - injected
@@ -25,11 +25,13 @@ explorer:
   address: https://mumbai.polygonscan.com/address/{{address}}/
   transactionHash: https://mumbai.polygonscan.com/tx/{{tx}}/
 supportedCurrencies:
-  - icon: matic.svg
+  - icon: "matic.svg"
     label: WMATIC
-    address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
+    address: "0x9c3c9283d3e44854697cd22d3faa240cfb032889"
+    pair: "0x819f3450da6f110ba6ea52195b3beafa246062de"
     decimals: 18
-  - icon: usdc.svg
+  - icon: "usdc.svg"
     label: USDC
-    address: '0xe6b8a5cf854791412c1f6efc7caf629f5df1c747'
+    address: "0xe6b8a5cf854791412c1f6efc7caf629f5df1c747"
+    pair: "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
     decimals: 6

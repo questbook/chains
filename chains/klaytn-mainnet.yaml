@@ -11,21 +11,21 @@ rpcUrls:
 supportedCurrencies:
   - icon: klay.svg
     label: WKLAY
-    address: '0xe4f05a66ec68b54a58b17c22107b02e0232cc817'
+    address: "0xe4f05a66ec68b54a58b17c22107b02e0232cc817"
     decimals: 18
 explorer:
   address: https://scope.klaytn.com/account/{{address}}
   transactionHash: https://scope.klaytn.com/tx/{{tx}}
 qbContracts:
   applications:
-    address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
+    address: "0x2d49a247AA77cA433218C9567953645bE04A7b3A"
     startBlock: 94004951
   workspace:
-    address: '0xda717ab1206c59493e1E5c66F4e0712B39EC6D81'
+    address: "0xda717ab1206c59493e1E5c66F4e0712B39EC6D81"
     startBlock: 94004904
   grantFactory:
-    address: '0x32798CC9da06363eF2b0eE12e54cD4476D9C891a'
+    address: "0x32798CC9da06363eF2b0eE12e54cD4476D9C891a"
     startBlock: 94004927
   reviews:
-    address: '0x6Cb5Ee567592eD1fBdA48413a1F95e848d289D34'
+    address: "0x6Cb5Ee567592eD1fBdA48413a1F95e848d289D34"
     startBlock: 94005156
