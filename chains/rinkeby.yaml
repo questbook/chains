@@ -8,17 +8,17 @@ rpcUrls:
   - https://rinkeby.infura.io/v3/{{infura_key}}
 qbContracts:
   workspace:
-    address: '0xC5bA1DD677a89f7675015cd96124702D5a2D3A40'
-    startBlock: 10456251
+    address: '0x8BffF1DeB6dA2C632C630E0d1C38407B2e03d5dE'
+    startBlock: 10977146
   applications:
-    address: '0xa77f115310a5761D048790231B0BdB29FD857Ce2'
-    startBlock: 10456251
+    address: '0xdC5EbC9130a2e7Ad776E3503fa6Dcf16D80ca915'
+    startBlock: 10977150
   grantFactory:
-    address: '0xF76C1d6ED36d48aCF13d8c99c1ba497fb0073bdB'
-    startBlock: 10456251
+    address: '0xb03DfB2e4A9341211E654428A7d434a29D400C16'
+    startBlock: 10977148
   reviews:
-    address: '0x54F1f6aAe77D2E3feA4c40A7d99E4aDcEFa00c79'
-    startBlock: 10456251
+    address: '0x02961f1ba548B58A1Ffe3B381cda7CAdfC70f422'
+    startBlock: 10977153
 supportedWallets:
   - injected
   - walletConnect
