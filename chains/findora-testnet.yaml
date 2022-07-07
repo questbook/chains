@@ -12,7 +12,6 @@ supportedCurrencies:
   - icon: findora.svg
     label: FRA
     address: "0x0000000000000000000000000000000000001000"
-    pair:
     decimals: 18
 nativeCurrency:
   name: Findora

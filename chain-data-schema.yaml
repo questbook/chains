@@ -139,7 +139,6 @@ SupportedCurrency:
       type: string
       format: hex
       description: Address of the currency on the chain
-    pair: 
       type: string
       format: hex
       description: Pair address for the currency in Uniswap

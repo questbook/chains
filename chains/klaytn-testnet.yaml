@@ -12,7 +12,6 @@ supportedCurrencies:
   - icon: "klay.svg"
     label: "KLAY"
     address: "0x9330dd6713c8328a8d82b14e3f60a0f0b4cc7bfb"
-    pair:
     decimals: 18
 explorer:
   address: https://baobab.scope.klaytn.com/account/{{address}}
