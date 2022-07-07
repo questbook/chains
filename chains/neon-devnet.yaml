@@ -37,5 +37,5 @@ supportedCurrencies:
   - icon: "usdc.svg"
     label: USDC
     address: '0x2578c6c1ac883443388edd688ca10e87d088bfa8'
-    pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
+    pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc'
     decimals: 6
