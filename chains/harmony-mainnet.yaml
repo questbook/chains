@@ -7,16 +7,16 @@ rpcUrls:
   - https://api.harmony.one
 qbContracts:
   applications:
-    address: '0x32798CC9da06363eF2b0eE12e54cD4476D9C891a'
+    address: "0x32798CC9da06363eF2b0eE12e54cD4476D9C891a"
     startBlock: 27581870
   workspace:
-    address: '0x6D0f81BDA11995f25921aAd5B43359630E65Ca96'
+    address: "0x6D0f81BDA11995f25921aAd5B43359630E65Ca96"
     startBlock: 27581848
   grantFactory:
-    address: '0xda717ab1206c59493e1E5c66F4e0712B39EC6D81'
+    address: "0xda717ab1206c59493e1E5c66F4e0712B39EC6D81"
     startBlock: 27581859
   reviews:
-    address: '0x2d49a247AA77cA433218C9567953645bE04A7b3A'
+    address: "0x2d49a247AA77cA433218C9567953645bE04A7b3A"
     startBlock: 27581881
 supportedWallets:
   - injected
@@ -27,5 +27,6 @@ explorer:
 supportedCurrencies:
   - icon: "usdc.svg"
     label: USDC
-    address: '0x985458e523db3d53125813ed68c274899e9dfab4'
+    address: "0x985458e523db3d53125813ed68c274899e9dfab4"
+    pair: "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
     decimals: 6

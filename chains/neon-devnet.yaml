@@ -28,6 +28,7 @@ supportedCurrencies:
   - icon: "dai.svg"
     label: DAI
     address: '0x7ad98aeadbbcdf3693b0b53c09da4033704c9322'
+    pair: '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11'
     decimals: 9
   - icon: "neon.svg"
     label: WNEON
@@ -36,4 +37,5 @@ supportedCurrencies:
   - icon: "usdc.svg"
     label: USDC
     address: '0x2578c6c1ac883443388edd688ca10e87d088bfa8'
+    pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc'
     decimals: 6

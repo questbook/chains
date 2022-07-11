@@ -29,30 +29,37 @@ supportedCurrencies:
     - icon: "dai.svg"
       label: DAI
       address: '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063'
+      pair: '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11'
       decimals: 18
     - icon: "matic.svg"
       label: WMATIC
       address: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270'
+      pair: '0x819f3450da6f110ba6ea52195b3beafa246062de'
       decimals: 18
     - icon: "weth.svg"
       label: WETH
       address: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619'
+      pair: '0x0'
       decimals: 18
     - icon: "usdc.svg"
       label: USDC
       address: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
+      pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc'
       decimals: 6
     - icon: "aave.svg"
       label: AAVE
       address: '0xd6df932a45c0f255f85145f286ea0b292b21c90b'
+      pair: '0xdfc14d2af169b0d36c4eff567ada9b2e0cae044f'
       decimals: 18
     - icon: "ocean.svg"
       label: OCEAN
       address: '0x282d8efce846a88b159800bd4130ad77443fa1a1'
+      pair: '0x9b7dad79fc16106b47a3dab791f389c167e15eb0'
       decimals: 18
     - icon: "inch.svg"
       label: 1INCH
       address: '0x9c2c5fd7b07e95ee044ddeba0e97a665f142394f'
+      pair: '0x26aad2da94c59524ac0d93f6d6cbf9071d7086f2'
       decimals: 18
     - icon: "biconomy.svg"
       label: BICO
@@ -65,10 +72,12 @@ supportedCurrencies:
     -  icon: "boba.svg"
        label: BOBA
        address: '0x236ba47c763a8ee1a8f064e867d0751b1714fdf8'
+       pair: '0xcc6c24c992059ced4a390b9d2f743645bfe1de49'
        decimals: 18
     - icon: "flux.svg"
       label: FLUX
       address: '0xd10852df03ea8b8af0cc0b09cac3f7dbb15e0433'
+      pair: '0x27fa67302c513f5512bbfa5065800c2d7b3871f4'
       decimals: 18
     - icon: "livepeer.svg"
       label: LPT
@@ -81,6 +90,7 @@ supportedCurrencies:
     - icon: "stackos.svg"
       label: STACK
       address: '0x980111ae1b84e50222c8843e3a7a038f36fecd2b'
+      pair: '0x635b58600509acfe70e0bd4c4935c08182774e58'
       decimals: 18
     - icon: "uma.svg"
       label: UMA
@@ -89,10 +99,12 @@ supportedCurrencies:
     - icon: "uniswap.svg"
       label: UNI
       address: '0xb33eaad8d922b1083446dc23f610c2567fb5180f'
+      pair: '0xd3d2e2692501a5c9ca623199d38826e513033a17'
       decimals: 18
     - icon: "yearn.svg"
       label: YFI
       address: '0xda537104d6a5edd53c6fbba9a898708e465260b6'
+      pair: '0x2fdbadf3c4d5a8666bc06645b8358ab803996e28'
       decimals: 18
     - icon: "zkp.svg"
       label: ZKP
