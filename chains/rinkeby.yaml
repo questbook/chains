@@ -4,21 +4,20 @@ userFacingName: Rinkeby
 isTestNetwork: true
 icon: eth.svg
 rpcUrls:
-  # infura key is replaced when the graph node is deployed
   - https://rinkeby.infura.io/v3/{{infura_key}}
 qbContracts:
-  workspace:
-    address: '0x8BffF1DeB6dA2C632C630E0d1C38407B2e03d5dE'
-    startBlock: 10977146
   applications:
-    address: '0xdC5EbC9130a2e7Ad776E3503fa6Dcf16D80ca915'
-    startBlock: 10977150
+    address: '0xD139A265C19e9A97b0963ff6F64999789d1Cf6Aa'
+    startBlock: 11007019
+  workspace:
+    address: '0xEF77967DEae683D5a66E480cc2D7B9e38cc79a1f'
+    startBlock: 11007014
   grantFactory:
-    address: '0xb03DfB2e4A9341211E654428A7d434a29D400C16'
-    startBlock: 10977148
+    address: '0xF6C563C9A9956ED23B396aF9252d640B1512a3d1'
+    startBlock: 11007017
   reviews:
-    address: '0x02961f1ba548B58A1Ffe3B381cda7CAdfC70f422'
-    startBlock: 10977153
+    address: '0xCbFD79d3Fd1FE493fDC87CF8809805978F9a83d0'
+    startBlock: 11007021
 supportedWallets:
   - injected
   - walletConnect
@@ -26,8 +25,8 @@ explorer:
   address: https://rinkeby.etherscan.io/address/{{address}}
   transactionHash: https://rinkeby.etherscan.io/tx/{{tx}}
 nativeCurrency:
-  name: 'Rinkeby ETH'
-  symbol: 'ETH'
+  name: Rinkeby ETH
+  symbol: ETH
   decimals: 18
 supportedCurrencies:
   - icon: dai.svg
