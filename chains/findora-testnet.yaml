@@ -11,7 +11,7 @@ rpcUrls:
 supportedCurrencies:
   - icon: findora.svg
     label: FRA
-    address: "0x0000000000000000000000000000000000001000"
+    address: '0x0000000000000000000000000000000000001000'
     decimals: 18
 nativeCurrency:
   name: Findora
@@ -22,14 +22,14 @@ explorer:
   transactionHash: https://testnet-anvil.evm.findorascan.io/tx/{{tx}}
 qbContracts:
   applications:
-    address: "0xF93F605142Fb1Efad7Aa58253dDffF67775b4520"
-    startBlock: 842047
+    address: '0xaFaC7a1229509A6dF7f75AAF1B28C1e927D6A542'
+    startBlock: 902817
   workspace:
-    address: "0xfEc77DcD17d4b4F435893e8da0A7FC5d77DD4A1C"
-    startBlock: 842043
+    address: '0x6C95c4b887eAcC52612e3D79575A1b00Ace05A4d'
+    startBlock: 902812
   grantFactory:
-    address: "0xCc86D90D96831AF8CF2c1E051ae98Ffa991414d2"
-    startBlock: 842045
+    address: '0xc782342D667f8355869E9f5D23f245804aB10F56'
+    startBlock: 902815
   reviews:
-    address: "0xF839b31c6b3062B033536B4fe47789C47b187fc9"
-    startBlock: 842050
+    address: '0xB2594525944249664F577fD6812CA03a09FDffdf'
+    startBlock: 902819
