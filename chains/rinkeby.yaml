@@ -7,17 +7,17 @@ rpcUrls:
   - https://rinkeby.infura.io/v3/{{infura_key}}
 qbContracts:
   applications:
-    address: '0xD139A265C19e9A97b0963ff6F64999789d1Cf6Aa'
-    startBlock: 11007019
+    address: '0x3f718a42d1E7EDE928b81A72eE9eF3d63607d999'
+    startBlock: 11021675
   workspace:
-    address: '0xEF77967DEae683D5a66E480cc2D7B9e38cc79a1f'
-    startBlock: 11007014
+    address: '0x85d6F1C1129778e87eD3671E332AA364d0beb5D1'
+    startBlock: 11021672
   grantFactory:
-    address: '0xF6C563C9A9956ED23B396aF9252d640B1512a3d1'
-    startBlock: 11007017
+    address: '0xB6E5b2faBe68B7212d1c25f44480a4B75812B901'
+    startBlock: 11021673
   reviews:
-    address: '0xCbFD79d3Fd1FE493fDC87CF8809805978F9a83d0'
-    startBlock: 11007021
+    address: '0xfbFeEc614A6468BF29888B1591D6bb2fde223Ae5'
+    startBlock: 11021677
 supportedWallets:
   - injected
   - walletConnect
@@ -31,16 +31,16 @@ nativeCurrency:
 supportedCurrencies:
   - icon: dai.svg
     label: DAI
-    address: "0xc7ad46e0b8a400bb3c915120d284aafba8fc4735"
-    pair: "0xa478c2975ab1ea89e8196811f51a7b7ade33eb11"
+    address: '0xc7ad46e0b8a400bb3c915120d284aafba8fc4735'
+    pair: '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11'
     decimals: 18
   - icon: weth.svg
     label: WETH
-    address: "0xc778417e063141139fce010982780140aa0cd5ab"
-    pair: "0x0"
+    address: '0xc778417e063141139fce010982780140aa0cd5ab'
+    pair: '0x0'
     decimals: 18
   - icon: usdc.svg
     label: USDC
-    address: "0xeb8f08a975ab53e34d8a0330e0d34de942c95926"
-    pair: "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
+    address: '0xeb8f08a975ab53e34d8a0330e0d34de942c95926'
+    pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc'
     decimals: 6
