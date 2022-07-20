@@ -1,0 +1,36 @@
+chainName: evmos-testnet
+chainId: 9000
+userFacingName: Evmos Testnet
+isTestNetwork: true
+icon: eth.svg
+rpcUrls:
+  - https://eth.bd.evmos.dev:8545
+supportedWallets:
+  - injected
+  - walletConnect
+explorer:
+  address: https://evm.evmos.dev/address/{{address}}
+  transactionHash: https://evm.evmos.dev/tx/{{tx}}
+nativeCurrency:
+  name: Test EVMOS
+  symbol: tEVMOS
+  decimals: 18
+supportedCurrencies:
+  - icon: usdc.svg
+    label: USDC
+    address: '0xae95d4890bf4471501e0066b6c6244e1caaee791'
+    pair: '0x0'
+    decimals: 6
+qbContracts:
+  applications:
+    address: '0xF4Db8BdDF1029764e4E09e7cE34149371a9A7027'
+    startBlock: 3190631
+  workspace:
+    address: '0x2dB223158288B2299480aF577eDF30D5a533F137'
+    startBlock: 3190607
+  grantFactory:
+    address: '0xf08bCcf3C9DE7Daf25BCe13C87D0dd69754E0a33'
+    startBlock: 3190618
+  reviews:
+    address: '0xab163375C1aD08e24005771cC9908a1C7c61Adaa'
+    startBlock: 3190645
