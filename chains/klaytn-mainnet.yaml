@@ -16,6 +16,10 @@ supportedCurrencies:
 explorer:
   address: https://scope.klaytn.com/account/{{address}}
   transactionHash: https://scope.klaytn.com/tx/{{tx}}
+nativeCurrency:
+  name: Klaytn Mainnet
+  symbol: KLAY
+  decimals: 18
 qbContracts:
   applications:
     address: "0x2d49a247AA77cA433218C9567953645bE04A7b3A"

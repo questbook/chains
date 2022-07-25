@@ -24,6 +24,10 @@ supportedWallets:
 explorer:
   address: https://mumbai.polygonscan.com/address/{{address}}/
   transactionHash: https://mumbai.polygonscan.com/tx/{{tx}}/
+nativeCurrency:
+  name: Polygon Testnet
+  symbol: MATIC
+  decimals: 18
 supportedCurrencies:
   - icon: "matic.svg"
     label: WMATIC

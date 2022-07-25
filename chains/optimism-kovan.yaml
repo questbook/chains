@@ -21,6 +21,10 @@ qbContracts:
 supportedWallets:
     - injected
     - walletConnect
+nativeCurrency:
+  name: Optimism Kovan
+  symbol: KOR
+  decimals: 18
 explorer:
   address: https://optimistic.etherscan.io/address/{{address}}/
   transactionHash: https://optimistic.etherscan.io/tx/{{tx}}/

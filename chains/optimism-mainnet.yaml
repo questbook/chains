@@ -24,6 +24,10 @@ supportedWallets:
 explorer:
   address: https://optimistic.etherscan.io/address/{{address}}/
   transactionHash: https://optimistic.etherscan.io/tx/{{tx}}/
+nativeCurrency:
+  name: Optimistic Ethereum
+  symbol: ETH
+  decimals: 18
 supportedCurrencies:
     - icon: "dai.svg"
       label: DAI

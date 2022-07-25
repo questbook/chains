@@ -25,6 +25,10 @@ supportedWallets:
 explorer:
   address: https://polygonscan.com/address/{{address}}/
   transactionHash: https://polygonscan.com/tx/{{tx}}/
+nativeCurrency:
+  name: Polygon Mainnet
+  symbol: MATIC
+  decimals: 18
 supportedCurrencies:
     - icon: "dai.svg"
       label: DAI

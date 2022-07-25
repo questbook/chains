@@ -27,6 +27,10 @@ supportedCurrencies:
     address: "0xe22da380ee6b445bb8273c81944adeb6e8450422"
     pair: "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc"
     decimals: 6
+nativeCurrency:
+  name: Kovan
+  symbol: KOV
+  decimals: 18
 qbContracts:
   applications:
     address: "0x611a8740ed9B18d7C78e2286E651c4970eEC4AA1"

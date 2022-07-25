@@ -24,6 +24,10 @@ supportedWallets:
 explorer:
   address: https://neonscan.org/address/{{address}}/
   transactionHash: https://neonscan.org/tx/{{tx}}/
+nativeCurrency:
+  name: Neon Devnet
+  symbol: NEON
+  decimals: 18
 supportedCurrencies:
   - icon: "dai.svg"
     label: DAI

@@ -16,6 +16,10 @@ supportedCurrencies:
 explorer:
   address: https://baobab.scope.klaytn.com/account/{{address}}
   transactionHash: https://baobab.scope.klaytn.com/tx/{{tx}}
+nativeCurrency:
+  name: Klaytn Testnet
+  symbol: KLAY
+  decimals: 18
 qbContracts:
   applications:
     address: "0xCF6247753d0cf5CB2FEe2F291cCCfd2e9d63C8b2"

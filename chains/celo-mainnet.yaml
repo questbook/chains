@@ -24,6 +24,10 @@ supportedCurrencies:
     label: cUSD
     address: "0x765de816845861e75a25fca122bb6898b8b1282a"
     decimals: 18
+nativeCurrency:
+  name: Celo Mainnet
+  symbol: CELO
+  decimals: 18
 qbContracts:
   applications:
     address: "0x32798CC9da06363eF2b0eE12e54cD4476D9C891a"
