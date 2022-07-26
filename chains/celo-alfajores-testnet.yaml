@@ -18,7 +18,10 @@ qbContracts:
   reviews:
     address: "0x6Cb5Ee567592eD1fBdA48413a1F95e848d289D34"
     startBlock: 11709456
-
+nativeCurrency:
+  name: Celo Alfajores Testnet
+  symbol: CELO
+  decimals: 18
 supportedWallets:
   - injected
   - walletConnect

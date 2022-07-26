@@ -21,6 +21,10 @@ qbContracts:
 supportedWallets:
   - injected
   - walletConnect
+nativeCurrency:
+  name: Harmony Mainnet
+  symbol: ONE
+  decimals: 18
 explorer:
   address: https://explorer.harmony.one/address/{{address}}/
   transactionHash: https://explorer.harmony.one/tx/{{tx}}/

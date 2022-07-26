@@ -24,6 +24,10 @@ supportedWallets:
 explorer:
   address: https://explorer.pops.one/address/{{address}}/
   transactionHash: https://explorer.pops.one/tx/{{tx}}/
+nativeCurrency:
+  name: Harmony Testnet
+  symbol: ONE
+  decimals: 18
 supportedCurrencies:
   - icon: "usdc.svg"
     label: USDC
