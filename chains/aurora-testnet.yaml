@@ -26,10 +26,6 @@ supportedCurrencies:
     address: '0xaab34177b4b5ca686d3ee1ce705133cb3554b183'
     pair: '0x0'
     decimals: 6
-nativeCurrency:
-  name: Aurora Testnet
-  symbol: ETH
-  decimals: 18
 qbContracts:
   applications:
     address: '0xC6b6356FBdcf6CC6EA4Cb90Cd11B7E3c5848F312'
