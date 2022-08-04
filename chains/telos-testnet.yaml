@@ -28,3 +28,9 @@ qbContracts:
   reviews:
     address: '0xe99Be727911552f671e18f37C42d0d6961f07675'
     startBlock: 185921908
+supportedCurrencies:
+  - icon: usdc.svg
+    label: USDC
+    address: '0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b'
+    pair: '0x0'
+    decimals: 6
