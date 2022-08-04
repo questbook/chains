@@ -1,0 +1,30 @@
+chainName: telos-testnet
+chainId: 41
+isTestNetwork: true
+icon: telos.svg
+userFacingName: Telos Testnet
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://testnet.telos.net/evm
+explorer:
+  address: https://testnet.teloscan.io/address/{{address}}/
+  transactionHash: https://testnet.teloscan.io/tx/{{tx}}/
+nativeCurrency:
+  name: Telos Testnet
+  symbol: TLOS
+  decimals: 18
+qbContracts:
+  applications:
+    address: '0x0022B3FB492596C86CF114b460D9Bd6a9cf80Ba2'
+    startBlock: 185921853
+  workspace:
+    address: '0x0c58ff1573c0c3F07B54D4dE0Ab19e047F4785FB'
+    startBlock: 185921708
+  grantFactory:
+    address: '0xbD4c8Aea352851D2c043D31B07B155B7F14505AC'
+    startBlock: 185921785
+  reviews:
+    address: '0xe99Be727911552f671e18f37C42d0d6961f07675'
+    startBlock: 185921908
