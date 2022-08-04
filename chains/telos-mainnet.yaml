@@ -28,9 +28,6 @@ qbContracts:
   reviews:
     address: '0x4dF627729f8a79F3A8bCD42C069d15bC4777830A'
     startBlock: 229340706
-supportedWallets:
-  - injected
-  - walletConnect
 supportedCurrencies:
   - icon: usdc.svg
     label: USDC
