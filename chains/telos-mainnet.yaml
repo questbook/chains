@@ -1,0 +1,30 @@
+chainName: telos-mainnet
+chainId: 40
+isTestNetwork: false
+icon: telos.svg
+userFacingName: Telos Mainnet
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://mainnet.telos.net/evm
+explorer:
+  address: https://www.teloscan.io/address/{{address}}/
+  transactionHash: https://www.teloscan.io/tx/{{tx}}/
+nativeCurrency:
+  name: Telos Mainnet
+  symbol: TLOS
+  decimals: 18
+qbContracts:
+  applications:
+    address: '0xcbE56313F2A7592d97caf909d6A8b8cD72e9Fbae'
+    startBlock: 229340660
+  workspace:
+    address: '0x02bE08DeD04a6A7F7D4b5593cD303AC8Cef652DB'
+    startBlock: 229340591
+  grantFactory:
+    address: '0x56A4a132e3Ab595F657F4B2c4A3e1484F38C32b6'
+    startBlock: 229340632
+  reviews:
+    address: '0x4dF627729f8a79F3A8bCD42C069d15bC4777830A'
+    startBlock: 229340706
