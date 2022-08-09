@@ -25,11 +25,11 @@ qbContracts:
     address: '0x084aCcB463c38D7e050cf7099B4D11C9EBa78a2E'
     startBlock: 186791240
   workspace:
-    address: '0xb103949d15a1E654A4b0cAA7Ce24c8ba40494363'
-    startBlock: 23608594
+    address: '0x37d2df191899C715fE840671C6240C4Be05aF6B3'
+    startBlock: 23609163
   grantFactory:
-    address: '0x33cce37B49DF371bf6492a88A86523A56FA64393'
-    startBlock: 23608597
+    address: '0xAAD5fD023BB96867aF3dCE443F0252CF53FB0424'
+    startBlock: 23609167
   reviews:
     address: '0xF386f93269cb23Ff1b5c0635Ff4258d607BF7ae4'
     startBlock: 186791272
