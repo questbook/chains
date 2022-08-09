@@ -17,17 +17,17 @@ nativeCurrency:
   decimals: 18
 qbContracts:
   applications:
-    address: '0xcbE56313F2A7592d97caf909d6A8b8cD72e9Fbae'
-    startBlock: 229340660
+    address: '0x6BE9f5605C30787EC25841685aEb2eEE0462F6E8'
+    startBlock: 230209724
   workspace:
-    address: '0x02bE08DeD04a6A7F7D4b5593cD303AC8Cef652DB'
-    startBlock: 229340591
+    address: '0x2F49964b7736B804a61F3ccC14A970dD77C0C43c'
+    startBlock: 230209672
   grantFactory:
-    address: '0x56A4a132e3Ab595F657F4B2c4A3e1484F38C32b6'
-    startBlock: 229340632
+    address: '0x3a77d002474aC5e4f7b2D084AD37c28Ff966b0f5'
+    startBlock: 230209689
   reviews:
-    address: '0x4dF627729f8a79F3A8bCD42C069d15bC4777830A'
-    startBlock: 229340706
+    address: '0x10BEd93621f8BeE7B8f7E2fCA5D2060D08f81a12'
+    startBlock: 230209764
 supportedCurrencies:
   - icon: usdc.svg
     label: USDC
