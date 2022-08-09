@@ -1,0 +1,35 @@
+chainName: gnosis-mainnet
+chainId: 100
+isTestNetwork: false
+icon: gnosis.svg
+userFacingName: Gnosis Mainnet
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://rpc.gnosischain.com/
+explorer:
+  address: https://blockscout.com/xdai/mainnet/address/{{address}}/
+  transactionHash: https://blockscout.com/xdai/mainnet/tx/{{tx}}/
+nativeCurrency:
+  name: Gnosis Mainnet
+  symbol: GNO
+  decimals: 18
+supportedCurrencies:
+  - icon: gnosis.svg
+    label: GNO
+    address: '0x9c58bacc331c9aa871afd802db6379a98e80cedb'
+    decimals: 18
+qbContracts:
+  applications:
+    address: '0xac98716D5FECD6d2049d3292De15F37eDBE17d73'
+    startBlock: 23605032
+  workspace:
+    address: '0x3Ea559b2f1947CdE1cdDD3604EB490424F4e4C71'
+    startBlock: 23605424
+  grantFactory:
+    address: '0x273B6275eB4cdB72B5478f7B7333968D220F52e3'
+    startBlock: 23605427
+  reviews:
+    address: '0x9631C8BCA634efb6Ce0330B93E69EbA112CB1866'
+    startBlock: 23605061
