@@ -22,14 +22,14 @@ supportedCurrencies:
     decimals: 18
 qbContracts:
   applications:
-    address: '0xd137DfA74B1c379C346ff738939Ae0D376A1AC71'
-    startBlock: 23605765
+    address: '0x084aCcB463c38D7e050cf7099B4D11C9EBa78a2E'
+    startBlock: 186791240
   workspace:
-    address: '0x1DB3B1Aebc56E43c5Ba332a2135522d37dD170f4'
-    startBlock: 23607485
+    address: '0xb103949d15a1E654A4b0cAA7Ce24c8ba40494363'
+    startBlock: 23608594
   grantFactory:
-    address: '0x7A8Db5Fa5c6B3aeB1b59bB53d7Ba24ccC2b12939'
-    startBlock: 23607488
+    address: '0x33cce37B49DF371bf6492a88A86523A56FA64393'
+    startBlock: 23608597
   reviews:
-    address: '0x9FCC64bE19E623dA69FA66C5320015E6939aFb65'
-    startBlock: 23605781
+    address: '0xF386f93269cb23Ff1b5c0635Ff4258d607BF7ae4'
+    startBlock: 186791272
