@@ -1,0 +1,22 @@
+chainName: metis-testnet
+chainId: 588
+isTestNetwork: true
+icon: metis.svg
+userFacingName: Metis Testnet
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://stardust.metis.io/?owner=588
+explorer:
+  address: https://stardust-explorer.metis.io/address/{{address}}/
+  transactionHash: https://stardust-explorer.metis.io/tx/{{tx}}/
+nativeCurrency:
+  name: Metis Testnet
+  symbol: METIS
+  decimals: 18
+supportedCurrencies:
+  - icon: metis.svg
+    label: METIS
+    address: '0x6e5791ad106fcadfba3115cdc21d1ad3471d2e13'
+    decimals: 18

@@ -1,0 +1,22 @@
+chainName: metis-mainnet
+chainId: 1088
+isTestNetwork: false
+icon: metis.svg
+userFacingName: Metis Mainnet
+supportedWallets:
+  - injected
+  - walletConnect
+rpcUrls:
+  - https://andromeda.metis.io/?owner=1088
+explorer:
+  address: https://andromeda-explorer.metis.io/address/{{address}}/
+  transactionHash: https://andromeda-explorer.metis.io/tx/{{tx}}/
+nativeCurrency:
+  name: Metis Mainnet
+  symbol: METIS
+  decimals: 18
+supportedCurrencies:
+  - icon: metis.svg
+    label: METIS
+    address: '0x6e5791ad106fcadfba3115cdc21d1ad3471d2e13'
+    decimals: 18
