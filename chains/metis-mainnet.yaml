@@ -18,5 +18,18 @@ nativeCurrency:
 supportedCurrencies:
   - icon: metis.svg
     label: METIS
-    address: '0x6e5791ad106fcadfba3115cdc21d1ad3471d2e13'
+    address: '0x9e32b13ce7f2e80a01932b42553652e053d6ed8e'
     decimals: 18
+qbContracts:
+  applications:
+    address: '0xF5A60fDB047343BB0B459B5CcE3c7c05791C3f1A'
+    startBlock: 3355250
+  workspace:
+    address: '0xAAD5fD023BB96867aF3dCE443F0252CF53FB0424'
+    startBlock: 3355245
+  grantFactory:
+    address: '0xDe969eC2Ff6653f0BD2D60327f409D927C9A0F28'
+    startBlock: 3355247
+  reviews:
+    address: '0x6C912FAa7A8F306eea474be5dFa79Ca402a16507'
+    startBlock: 3355254
