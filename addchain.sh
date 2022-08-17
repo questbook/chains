@@ -21,6 +21,9 @@ NETWORK=$NETWORK yarn typechain
 
 echo "deploying contracts"
 NETWORK=$NETWORK npm run deploy
+sleep 5s
+NETWORK=$NETWORK npm run deploy1
+sleep 5s
 NETWORK=$NETWORK npm run postdeploy
 cd ../.. 
 
