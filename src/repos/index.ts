@@ -2,6 +2,7 @@ import grantsContractsUpgradeable from "./grants-contracts-upgradeable";
 import grantsFrontend from "./grants-frontend";
 import graphNodeDeployment from "./graph-node-deployment";
 import qbAPI from "./qb-api";
+import questbookAnalyticsV0 from "./questbook-analytics-v0";
 import serviceValidator from "./service-validator";
 import subgraph from "./subgraph";
 
@@ -14,4 +15,5 @@ export default [
 	subgraph,
 	grantsFrontend,
 	qbAPI,
+	questbookAnalyticsV0
 ]
