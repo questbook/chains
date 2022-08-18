@@ -69,6 +69,12 @@ const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, valid
 				console.log(`no changes to ${name}`)
 			}
 		}
+
+		// push to self if required
+		const madeChanges = await addAndPushToRepo('./')
+		if(madeChanges) {
+			console.log(`pushed changes to self`)
+		}
 	}
 
 	console.log('done')
