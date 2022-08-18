@@ -6,8 +6,9 @@ import getArg from "./utils/get-arg"
 import { addAndPushToRepo, cloneRepo } from "./utils/git"
 import { execPromiseInDirectory } from "./utils/misc"
 import getAllChainsData from "./utils/get-all-chains-data"
+import mockQBContractData from './mock-qb-contract-data.json'
 
-const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, validate: boolean) => {
+const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, validate: boolean, mockTbd: boolean) => {
 	if(!validate) {
 		console.log('not validating chains -- also forcing dry run')
 		isDryRun = true
@@ -18,6 +19,16 @@ const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, valid
 	}
 
 	const chainMap = await getAllChainsData(validate)
+
+	if(mockTbd) {
+		console.log('mocking TBD chains')
+		for(const chainName in chainMap) {
+			if(chainMap[chainName].qbContracts === 'TBD') {
+				chainMap[chainName].qbContracts = mockQBContractData
+				console.log(`mocked for "${chainName}"`)
+			}
+		}
+	}
 
 	console.log(`got ${Object.keys(chainMap).length} chains`)
 
@@ -63,8 +74,10 @@ const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, valid
 	console.log('done')
 }
 
-const isDryRun = process.argv.includes('--dry-run')
+const mockTbd = process.argv.includes('--mock-tbd')
+// we do not want to ever commit with mock data
+const isDryRun = process.argv.includes('--dry-run') || mockTbd
 const doValidate = !process.argv.includes('--no-validate')
 const repoFilter = getArg('repo')
 
-execute(isDryRun, repoFilter ? [repoFilter] : undefined, doValidate)
+execute(isDryRun, repoFilter ? [repoFilter] : undefined, doValidate, mockTbd)

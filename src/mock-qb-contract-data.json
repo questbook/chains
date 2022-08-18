@@ -1,0 +1,18 @@
+{
+	"applications": {
+		"address": "0x0000000000000000000000000000000000000000",
+		"startBlock": 0
+	},
+	"workspace": {
+		"address": "0x0000000000000000000000000000000000000000",
+		"startBlock": 0
+	},
+	"grantFactory": {
+		"address": "0x0000000000000000000000000000000000000000",
+		"startBlock": 0
+	},
+	"reviews": {
+		"address": "0x0000000000000000000000000000000000000000",
+		"startBlock": 0
+	}
+}
