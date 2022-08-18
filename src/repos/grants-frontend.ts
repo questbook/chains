@@ -28,6 +28,10 @@ const grantsFrontend: CIRepo = {
 		// generate the chains.json file
 		const data = Object.values(chains).reduce(
 			(dict, chain) => {
+				const { qbContracts } = chain
+				if(typeof qbContracts !== 'object') {
+					throw new Error('QB contracts must be deployed before pushing to frontend')
+				}
 				dict[chain.chainId] = {
 					id: chain.chainId,
 					name: chain.userFacingName,
@@ -44,9 +48,9 @@ const grantsFrontend: CIRepo = {
 							return dict
 						}, { } as { [_: string]: any }
 					),
-					qbContracts: Object.keys(chain.qbContracts).reduce(
+					qbContracts: Object.keys(qbContracts).reduce(
 						(dict, contract) => {
-							dict[contract] = chain.qbContracts[contract as keyof typeof chain.qbContracts].address
+							dict[contract] = qbContracts[contract as keyof typeof qbContracts].address
 							return dict
 						}, { } as { [_: string]: string }
 					),

@@ -34,51 +34,50 @@ export interface ChainData {
    * Specify as many RPC urls you'd like for the chain
    */
   rpcUrls: [string, ...string[]];
-  /**
-   * Data about where the QB contracts are deployed on the chain
-   */
-  qbContracts: {
-    workspace: {
-      /**
-       * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
-       */
-      address: string;
-      /**
-       * What block to start indexing the contract. Could be any block after contract deployment
-       */
-      startBlock: number;
-    };
-    applications: {
-      /**
-       * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
-       */
-      address: string;
-      /**
-       * What block to start indexing the contract. Could be any block after contract deployment
-       */
-      startBlock: number;
-    };
-    grantFactory: {
-      /**
-       * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
-       */
-      address: string;
-      /**
-       * What block to start indexing the contract. Could be any block after contract deployment
-       */
-      startBlock: number;
-    };
-    reviews: {
-      /**
-       * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
-       */
-      address: string;
-      /**
-       * What block to start indexing the contract. Could be any block after contract deployment
-       */
-      startBlock: number;
-    };
-  };
+  qbContracts:
+    | {
+        workspace: {
+          /**
+           * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
+           */
+          address: string;
+          /**
+           * What block to start indexing the contract. Could be any block after contract deployment
+           */
+          startBlock: number;
+        };
+        applications: {
+          /**
+           * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
+           */
+          address: string;
+          /**
+           * What block to start indexing the contract. Could be any block after contract deployment
+           */
+          startBlock: number;
+        };
+        grantFactory: {
+          /**
+           * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
+           */
+          address: string;
+          /**
+           * What block to start indexing the contract. Could be any block after contract deployment
+           */
+          startBlock: number;
+        };
+        reviews: {
+          /**
+           * Address of the contract deployment, eg. '0x0000000000000000000000000000000000000000'
+           */
+          address: string;
+          /**
+           * What block to start indexing the contract. Could be any block after contract deployment
+           */
+          startBlock: number;
+        };
+      }
+    | "TBD";
   supportedCurrencies: {
     /**
      * Name of the SVG icon of the image.
@@ -92,6 +91,10 @@ export interface ChainData {
      * Address of the currency on the chain
      */
     address: string;
+    /**
+     * Pair address for the currency in Uniswap
+     */
+    pair?: string;
     /**
      * Number of decimals in the currency
      */

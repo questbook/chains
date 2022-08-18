@@ -36,12 +36,18 @@ const subgraph: CIRepo = {
 		const configsFolderPath = join(repoPath, CONFIGS_FOLDER)
 		await rm(configsFolderPath, { recursive: true, force: true })
 		await mkdir(configsFolderPath)
+
 		// save newly updated contract data
 		await Promise.all(
 			chainsList.map(async(chain) => {
+				const qbContracts = chain.qbContracts
+				if(typeof qbContracts !== 'object') {
+					throw new Error(`Contracts not deployed to "${chain}"`)
+				}
+
 				const data = {
 					network: chain.chainName,
-					...chain.qbContracts
+					...qbContracts
 				}
 				const path = join(configsFolderPath, `${chain.chainName}.json`)
 				await writeFile(path, JSON.stringify(data, undefined, 2))

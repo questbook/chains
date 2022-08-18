@@ -1,3 +1,6 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 import repos from "./repos"
 import getArg from "./utils/get-arg"
 import { addAndPushToRepo, cloneRepo } from "./utils/git"
@@ -32,9 +35,9 @@ const execute = async(isDryRun: boolean, repoFilter: string[] | undefined, valid
 		await doCI(
 			repoPath,
 			chainMap, 
-			async cmd => {
+			async (cmd, env) => {
 				console.log(`running "${cmd}" for ${repoName}...`)
-				const result = await execPromiseInDirectory(repoPath, cmd)
+				const result = await execPromiseInDirectory(repoPath, cmd, env)
 				console.log(`ran "${cmd}" for ${repoName}`)
 				return result
 			}

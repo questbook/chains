@@ -30,4 +30,4 @@ jobs:
       run: yarn
       
     - name: Check CI works
-      run: yarn start:tsc
+      run: PRIVATE_KEY=${{secrets.PRIVATE_KEY}} INFURA_API_KEY=${{secrets.INFURA_API_KEY}} yarn start:tsc

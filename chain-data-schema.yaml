@@ -45,23 +45,12 @@ ChainData:
       description: Specify as many RPC urls you'd like for the chain
       uniqueItems: true
     qbContracts:
-      type: object
-      description: Data about where the QB contracts are deployed on the chain
-      additionalProperties: false
-      required:
-        - workspace
-        - applications
-        - grantFactory
-        - reviews
-      properties:
-        workspace:
-          $ref: 'ContractData'
-        applications:
-          $ref: 'ContractData'
-        grantFactory:
-          $ref: 'ContractData'
-        reviews:
-          $ref: 'ContractData'
+      oneOf:
+        - $ref: 'QBContractList'
+        - type: string
+          description: Set to "TBD" to indicate to CI, that the contracts need to be deployed
+          enum:
+            - TBD
     supportedCurrencies:
       type: array
       items:
@@ -103,6 +92,24 @@ ChainData:
             mustache templated URL to view a transaction hash on the explorer. 
             {{tx}} will be replaced with the transaction hash
           pattern: '\{\{tx\}\}'
+QBContractList:
+  type: object
+  description: Data about where the QB contracts are deployed on the chain
+  additionalProperties: false
+  required:
+    - workspace
+    - applications
+    - grantFactory
+    - reviews
+  properties:
+    workspace:
+      $ref: 'ContractData'
+    applications:
+      $ref: 'ContractData'
+    grantFactory:
+      $ref: 'ContractData'
+    reviews:
+      $ref: 'ContractData'
 ContractData:
   type: object
   additionalProperties: false

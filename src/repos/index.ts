@@ -1,3 +1,4 @@
+import anonAuthoriser from "./anon-authoriser";
 import grantsContractsUpgradeable from "./grants-contracts-upgradeable";
 import grantsFrontend from "./grants-frontend";
 import graphNodeDeployment from "./graph-node-deployment";
@@ -8,8 +9,9 @@ import subgraph from "./subgraph";
 // list out all repos that require CI
 // these would be repos that derive data from this single source of truth repo
 export default [
-	graphNodeDeployment,
+	anonAuthoriser,
 	grantsContractsUpgradeable,
+	graphNodeDeployment,
 	serviceValidator,
 	subgraph,
 	grantsFrontend,
