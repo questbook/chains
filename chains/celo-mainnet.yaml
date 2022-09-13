@@ -26,7 +26,7 @@ supportedCurrencies:
     decimals: 18
   - icon: solana.png
     label: SOL
-    address: '0x0000000000000000000000000000000000000001'
+    address: '0x0000000000000000000000000000000000000002'
     pair: '0x0'
     decimals: 9
 qbContracts:
