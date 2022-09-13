@@ -123,4 +123,4 @@ supportedCurrencies:
       label: SOL
       address: '0x0000000000000000000000000000000000000001'
       pair: '0x0'
-      decimals: 1
+      decimals: 9
