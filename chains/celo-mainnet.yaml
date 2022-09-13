@@ -24,6 +24,11 @@ supportedCurrencies:
     label: cUSD
     address: "0x765de816845861e75a25fca122bb6898b8b1282a"
     decimals: 18
+  - icon: solana.png
+    label: SOL
+    address: '0x0000000000000000000000000000000000000001'
+    pair: '0x0'
+    decimals: 1
 qbContracts:
   applications:
     address: "0x32798CC9da06363eF2b0eE12e54cD4476D9C891a"
