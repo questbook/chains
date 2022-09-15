@@ -59,8 +59,8 @@ supportedCurrencies:
       address: '0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9'
       pair: '0xf80758ab42c3b07da84053fd88804bcb6baa4b5c'
       decimals: 18
-    - icon: solana.png
-      label: SOL
-      address: '0x0000000000000000000000000000000000000002'
+    - icon: "usdc.svg"
+      label: USD
+      address: '0x0000000000000000000000000000000000000001'
       pair: '0x0'
       decimals: 9
