@@ -152,7 +152,7 @@ SupportedCurrency:
       description: Pair address for the currency in Uniswap
     decimals:
       type: integer
-      minimum: 1
+      minimum: 0
       description: Number of decimals in the currency
 SupportedWallet:
   type: string
