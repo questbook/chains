@@ -47,11 +47,11 @@ supportedCurrencies:
     address: '0x2f3a40a3db8a7e3d09b0adfefbce4f6f81927557'
     pair: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc'
     decimals: 6
-  - icon: "usdc.svg"
+  - icon: "dollar.svg"
     label: USD
     address: '0x0000000000000000000000000000000000000001'
     pair: '0x0'
-    decimals: 9
+    decimals: 0
   - icon: solana.png
     label: SOL
     address: '0x0000000000000000000000000000000000000002'

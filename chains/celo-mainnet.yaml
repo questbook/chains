@@ -24,11 +24,11 @@ supportedCurrencies:
     label: cUSD
     address: "0x765de816845861e75a25fca122bb6898b8b1282a"
     decimals: 18
-  - icon: usdc.svg
+  - icon: dollar.svg
     label: USD
     address: '0x0000000000000000000000000000000000000001'
     pair: '0x0'
-    decimals: 9
+    decimals: 0
   - icon: solana.png
     label: SOL
     address: '0x0000000000000000000000000000000000000002'
