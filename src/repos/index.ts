@@ -5,6 +5,7 @@ import graphNodeDeployment from "./graph-node-deployment";
 import qbAPI from "./qb-api";
 import serviceValidator from "./service-validator";
 import subgraph from "./subgraph";
+import communicationService from "./communication-service";
 
 // list out all repos that require CI
 // these would be repos that derive data from this single source of truth repo
@@ -16,4 +17,5 @@ export default [
 	subgraph,
 	grantsFrontend,
 	qbAPI,
+	communicationService,
 ]
