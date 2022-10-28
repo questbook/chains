@@ -6,6 +6,7 @@ import qbAPI from "./qb-api";
 import serviceValidator from "./service-validator";
 import subgraph from "./subgraph";
 import communicationService from "./communication-service";
+import biconomyServer from "./biconomy-server";
 
 // list out all repos that require CI
 // these would be repos that derive data from this single source of truth repo
@@ -18,4 +19,6 @@ export default [
 	grantsFrontend,
 	qbAPI,
 	communicationService,
+	biconomyServer
+	
 ]
