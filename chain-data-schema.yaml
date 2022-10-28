@@ -101,6 +101,7 @@ QBContractList:
     - applications
     - grantFactory
     - reviews
+    - communication
   properties:
     workspace:
       $ref: 'ContractData'
@@ -109,6 +110,8 @@ QBContractList:
     grantFactory:
       $ref: 'ContractData'
     reviews:
+      $ref: 'ContractData'
+    communication:
       $ref: 'ContractData'
 ContractData:
   type: object

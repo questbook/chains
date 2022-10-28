@@ -4,6 +4,7 @@ import { chainsDirectory, chainAssetsDirectory } from '../config.json'
 import { ChainData } from '../types'
 import getChainDataValidator from './get-chain-data-validator'
 import { readYaml } from './yaml'
+import config from "../config.json"
 
 /**
  * Fetches all chains, validates them and then returns them in a map
