@@ -3,6 +3,5 @@
 	"chainAssetsDirectory": "./chain-assets",
 	"chainSchemaYamlFile": "./chain-data-schema.yaml",
 	"organisationUrl": "https://github.com/questbook/",
-	"tmpFolder": "./tmp",
-	"supportedChains": ["goerli-testnet", "optimism-mainnet", "polygon-mainnet", "celo-mainnet"]
+	"tmpFolder": "./tmp"
 }

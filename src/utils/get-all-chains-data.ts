@@ -11,8 +11,7 @@ import config from "../config.json"
  */
 export default async(validate = true) => {
 	const chainMap: { [_: string]: ChainData } = { }
-	const chains = (await getAllChainsList()).filter(chain => config.supportedChains.indexOf(chain) !== -1)
-	console.log(chains)
+	const chains = await getAllChainsList()
 	for(const chain of chains) {
 		chainMap[chain] = await assertChainData(chain, validate)
 	}
