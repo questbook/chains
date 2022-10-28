@@ -19,6 +19,9 @@ qbContracts:
   reviews:
     address: '0xdC5EbC9130a2e7Ad776E3503fa6Dcf16D80ca915'
     startBlock: 26808274
+  communication:
+    address: '0xE738283296dB5d8465A5FcA98aA7a6f14b431212'
+    startBlock: 34899719
 supportedWallets:
   -  injected
   -  walletConnect

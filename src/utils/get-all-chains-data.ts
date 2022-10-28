@@ -4,13 +4,15 @@ import { chainsDirectory, chainAssetsDirectory } from '../config.json'
 import { ChainData } from '../types'
 import getChainDataValidator from './get-chain-data-validator'
 import { readYaml } from './yaml'
+import config from "../config.json"
 
 /**
  * Fetches all chains, validates them and then returns them in a map
  */
 export default async(validate = true) => {
 	const chainMap: { [_: string]: ChainData } = { }
-	const chains = await getAllChainsList()
+	const chains = (await getAllChainsList()).filter(chain => config.supportedChains.indexOf(chain) !== -1)
+	console.log(chains)
 	for(const chain of chains) {
 		chainMap[chain] = await assertChainData(chain, validate)
 	}

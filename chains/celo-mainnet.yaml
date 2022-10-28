@@ -47,3 +47,6 @@ qbContracts:
   reviews:
     address: "0x2d49a247AA77cA433218C9567953645bE04A7b3A"
     startBlock: 13772314
+  communication:
+    address: "0xd7F4D4134f47255c4bc8E4f8CfDFD7854Aa2640e"
+    startBlock: 15856682
