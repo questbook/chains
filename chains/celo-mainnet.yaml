@@ -50,3 +50,6 @@ qbContracts:
   communication:
     address: "0x27aB1a33E95cF08Bd9807f9a59BB62ae76827E34"
     startBlock: 16964642
+  utility:
+    address: '0xF796985d9a2BF187af5512EACAa8177A8c077B61'
+    startBlock: 18691720

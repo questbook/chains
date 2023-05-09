@@ -113,6 +113,8 @@ QBContractList:
       $ref: 'ContractData'
     communication:
       $ref: 'ContractData'
+    utility:
+      $ref: 'ContractData'
 ContractData:
   type: object
   additionalProperties: false

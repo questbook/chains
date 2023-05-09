@@ -22,6 +22,9 @@ qbContracts:
   communication:
     address: '0x3d5302a9c37dEC7B800E08c6E24FC89E0A239840'
     startBlock: 37499197
+  utility:
+    address: '0xd3FcaabBa4ce2664b17e83FeFf0DD3767B88FA2F'
+    startBlock: 41366209
 supportedWallets:
   -  injected
   -  walletConnect
